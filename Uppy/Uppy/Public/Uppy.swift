@@ -45,10 +45,10 @@ import Foundation
 extension Uppy {
 
   /*
-  Initializes sdk with given mode
-  - Parameters:
-     - mode: SDKMode - Provides native or custom view for updating to latest build.
-  */
+   Initializes sdk with given mode
+   - Parameters:
+      - mode: SDKMode - Provides native or custom view for updating to latest build.
+   */
   @objc public func initialize(with mode: SDKMode = .native) {
     updateCoordinator.sdkMode = mode
     updateInteractor.start()
