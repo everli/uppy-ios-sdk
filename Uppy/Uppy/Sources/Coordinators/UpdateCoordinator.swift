@@ -60,7 +60,7 @@ extension UpdateCoordinator: UpdateInteractorOutput {
     }
 
     app.waitForReadyThen { [weak self] in
-      self?.app.showOtaAlert(Strings.otaUpdateMessage, downloadHandler: { [weak self] in
+      self?.app.showOtaAlert(Strings.otaUpdateMessage, updateHandler: { [weak self] in
         _ = self?.app.openUrl(update.downloadUrl ?? "")
       })
     }

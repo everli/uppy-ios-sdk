@@ -9,7 +9,7 @@
 import Foundation
 
 struct Update: Codable, Equatable {
-  
+
   let forced: Bool
   let version: String?
   let downloadUrl: String?
