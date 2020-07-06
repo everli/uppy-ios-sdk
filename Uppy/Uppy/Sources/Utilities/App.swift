@@ -22,10 +22,11 @@ protocol AppProtocol {
 }
 
 class App: AppProtocol {
-  
+
   // MARK: - Private variables
+
   private lazy var alertOta: UIAlertController = UIAlertController()
-  
+
   // MARK: - Public Helpers
 
   func bundleId() -> String {
@@ -64,7 +65,7 @@ class App: AppProtocol {
   }
 
   // MARK: - View Methods
-  
+
   func waitForReadyThen(_ onReady: @escaping () -> Void) {
     runInBackground { self.sleepUntilReady(); runOnMainThreadAsync(onReady) }
   }
@@ -85,13 +86,13 @@ class App: AppProtocol {
 // MARK: - Private Helpers
 
 extension App {
-  
+
   private var topViewController: UIViewController? {
     var rootViewController = UIApplication.shared.keyWindow?.rootViewController
     while let presentedViewController = rootViewController?.presentedViewController { rootViewController = presentedViewController }
     return rootViewController
   }
-  
+
   private var rootViewIsReady: Bool {
     var isReady = false
     runOnMainThreadSynced { isReady = UIApplication.shared.keyWindow?.rootViewController?.isViewLoaded ?? false }
