@@ -21,3 +21,7 @@ class ErrorFactory {
     return NSError(domain: GlobalConfig.ErrorDomain, code: errorCode.rawValue, userInfo: [GlobalConfig.ErrorKey: message])
   }
 }
+
+enum ErrorCode: Int {
+  case unknown = -1
+}
