@@ -20,8 +20,6 @@ class UpdateInteractor {
   private let globalConfig: GlobalConfig
   private let updateManager: UpdateManager
 
-  private var downloadLink = ""
-
   init(globalConfig: GlobalConfig, updateManager: UpdateManager) {
     self.globalConfig = globalConfig
     self.updateManager = updateManager
@@ -29,19 +27,14 @@ class UpdateInteractor {
 
   func start() {
     logInfo("☀️ UPPY INITIALIZED 🕊 ")
-    logInfo("SDK Version: \(GlobalConfig.shared.app.getSDKVersion())")
-    checkUpdates()
+    logInfo("SDK Version: \(globalConfig.app.getSDKVersion())")
+    checkUpdates(for: globalConfig.app.getVersion())
   }
 
-  private func checkUpdates() {
-    updateManager.checkUpdates { [weak self] update, error in
+  func checkUpdates(for appVersion: String) {
+    updateManager.checkUpdates(for: appVersion) { [weak self] update, error in
       guard let update = update, error == nil else { logError(error); return }
       update.forced ? self?.output?.forceUpdate(update: update) : self?.output?.otaUpdate(update: update)
-      self?.downloadLink = update.downloadUrl ?? ""
     }
-  }
-
-  func openDownloadLink() {
-    _ = GlobalConfig.shared.app.openUrl(downloadLink)
   }
 }
