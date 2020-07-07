@@ -14,29 +14,33 @@ import Foundation
 
   // MARK: - Public Properties
 
-  @objc public var logLevel: LogLevel { didSet { globalConfig.logLevel = logLevel } }
+  @objc public var logLevel: LogLevel = .info { didSet { globalConfig.logLevel = logLevel } }
 
   // MARK: - Private properties
 
   private let globalConfig: GlobalConfig
 
+  private let updateInteractor: UpdateInteractor
   private let updateCoordinator: UpdateCoordinator
-  internal let updateInteractor: UpdateInteractor
 
   private var updateCompletionHandler: ((String, Bool) -> Void)?
 
   // MARK: - Initializers
 
   override convenience init() {
-    self.init(config: GlobalConfig.shared)
+    self.init(config: GlobalConfig.shared,
+              updateInteractor: InteractorFactory.buildUpdateInteractor(),
+              updateCoordinator: UpdateCoordinator())
+    updateInteractor.output = updateCoordinator
     updateCoordinator.output = self
   }
 
-  internal init(config: GlobalConfig) {
+  internal init(config: GlobalConfig,
+                updateInteractor: UpdateInteractor,
+                updateCoordinator: UpdateCoordinator) {
     globalConfig = config
-    updateInteractor = InteractorFactory.buildUpdateInteractor()
-    updateCoordinator = UpdateCoordinator(updateInteractor: updateInteractor)
-    logLevel = .info
+    self.updateInteractor = updateInteractor
+    self.updateCoordinator = updateCoordinator
   }
 }
 
