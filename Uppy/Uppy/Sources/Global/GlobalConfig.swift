@@ -20,8 +20,7 @@ class GlobalConfig {
 
   // MARK: - Instance properties
 
+  var app: AppProtocol = App()
+  var device: DeviceProtocol = Device()
   var logLevel: LogLevel = .info
-
-  let app: AppProtocol = App()
-  let device: DeviceProtocol = Device()
 }
