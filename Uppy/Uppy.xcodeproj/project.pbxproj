@@ -21,6 +21,18 @@
 		9C4A21D224B1AF5300F83432 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A21D124B1AF5300F83432 /* UpdateViewController.swift */; };
 		9C4A21D424B1AF6000F83432 /* UpdatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A21D324B1AF6000F83432 /* UpdatePresenter.swift */; };
 		9C4A21D624B1B3D500F83432 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A21D524B1B3D500F83432 /* UIColor+Extension.swift */; };
+		9C54C59724B429BA002667D9 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C54C59624B429BA002667D9 /* OHHTTPStubs.framework */; };
+		9C54C59A24B42C68002667D9 /* StubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C59924B42C68002667D9 /* StubResponse.swift */; };
+		9C54C59D24B42CC3002667D9 /* AppMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C59C24B42CC3002667D9 /* AppMock.swift */; };
+		9C54C59F24B42F7A002667D9 /* DeviceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C59E24B42F7A002667D9 /* DeviceMock.swift */; };
+		9C54C5A124B4314C002667D9 /* GlobalConfigMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5A024B4314C002667D9 /* GlobalConfigMock.swift */; };
+		9C54C5A524B43F8C002667D9 /* UpdateServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5A424B43F8C002667D9 /* UpdateServiceMock.swift */; };
+		9C54C5A924B4590C002667D9 /* UpdateCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5A824B4590C002667D9 /* UpdateCoordinatorMock.swift */; };
+		9C54C5AB24B45F34002667D9 /* UpdateInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5AA24B45F34002667D9 /* UpdateInteractorMock.swift */; };
+		9C54C5AE24B46E2C002667D9 /* Uppy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB0EAD624AB06480004FCEE /* Uppy.framework */; };
+		9C54C5B024B46E63002667D9 /* OHHTTPStubs.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9C54C59624B429BA002667D9 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C54C5B324B4939D002667D9 /* UpdateManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5B224B4939D002667D9 /* UpdateManagerTests.swift */; };
+		9C54C5B524B4B811002667D9 /* Update.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C54C5A724B44CE7002667D9 /* Update.json */; };
 		9C8A7C1D24ADD1D8003B192E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A7C1C24ADD1D8003B192E /* App.swift */; };
 		9C8A7C2024ADD36A003B192E /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A7C1F24ADD36A003B192E /* Bundle+Extension.swift */; };
 		9C8A7C2424ADDC16003B192E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C8A7C2324ADDC16003B192E /* Localizable.strings */; };
@@ -28,7 +40,6 @@
 		9C94ADD124ADA70C00716091 /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C94ADD024ADA70C00716091 /* GlobalConfig.swift */; };
 		9C94ADD324ADAA2F00716091 /* Uppy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C94ADD224ADAA2F00716091 /* Uppy.swift */; };
 		9C94ADD924ADBDD800716091 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C94ADD824ADBDD800716091 /* Log.swift */; };
-		9CB0EAE024AB06480004FCEE /* Uppy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB0EAD624AB06480004FCEE /* Uppy.framework */; };
 		9CB0EAE524AB06480004FCEE /* UppyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0EAE424AB06480004FCEE /* UppyTests.swift */; };
 		9CB0EAE724AB06480004FCEE /* Uppy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CB0EAD924AB06480004FCEE /* Uppy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CB2163C24AF009E0054FA01 /* ErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2163B24AF009E0054FA01 /* ErrorFactory.swift */; };
@@ -49,6 +60,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9C54C5AF24B46E32002667D9 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9C54C5B024B46E63002667D9 /* OHHTTPStubs.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9C0686C424B1FB4300B5D928 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		9C0686C624B1FB5A00B5D928 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
@@ -64,6 +89,16 @@
 		9C4A21D124B1AF5300F83432 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 		9C4A21D324B1AF6000F83432 /* UpdatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePresenter.swift; sourceTree = "<group>"; };
 		9C4A21D524B1B3D500F83432 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		9C54C59624B429BA002667D9 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		9C54C59924B42C68002667D9 /* StubResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubResponse.swift; sourceTree = "<group>"; };
+		9C54C59C24B42CC3002667D9 /* AppMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMock.swift; sourceTree = "<group>"; };
+		9C54C59E24B42F7A002667D9 /* DeviceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceMock.swift; sourceTree = "<group>"; };
+		9C54C5A024B4314C002667D9 /* GlobalConfigMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConfigMock.swift; sourceTree = "<group>"; };
+		9C54C5A424B43F8C002667D9 /* UpdateServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateServiceMock.swift; sourceTree = "<group>"; };
+		9C54C5A724B44CE7002667D9 /* Update.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Update.json; sourceTree = "<group>"; };
+		9C54C5A824B4590C002667D9 /* UpdateCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCoordinatorMock.swift; sourceTree = "<group>"; };
+		9C54C5AA24B45F34002667D9 /* UpdateInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInteractorMock.swift; sourceTree = "<group>"; };
+		9C54C5B224B4939D002667D9 /* UpdateManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateManagerTests.swift; sourceTree = "<group>"; };
 		9C8A7C1C24ADD1D8003B192E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		9C8A7C1F24ADD36A003B192E /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		9C8A7C2324ADDC16003B192E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -97,7 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CB0EAE024AB06480004FCEE /* Uppy.framework in Frameworks */,
+				9C54C5AE24B46E2C002667D9 /* Uppy.framework in Frameworks */,
+				9C54C59724B429BA002667D9 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +207,52 @@
 				9C4A21D324B1AF6000F83432 /* UpdatePresenter.swift */,
 			);
 			path = Update;
+			sourceTree = "<group>";
+		};
+		9C54C59524B429BA002667D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C54C59624B429BA002667D9 /* OHHTTPStubs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C54C59824B42C50002667D9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C54C59924B42C68002667D9 /* StubResponse.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9C54C59B24B42CAD002667D9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9C54C5A624B44CC5002667D9 /* Json */,
+				9C54C59C24B42CC3002667D9 /* AppMock.swift */,
+				9C54C59E24B42F7A002667D9 /* DeviceMock.swift */,
+				9C54C5A024B4314C002667D9 /* GlobalConfigMock.swift */,
+				9C54C5AA24B45F34002667D9 /* UpdateInteractorMock.swift */,
+				9C54C5A824B4590C002667D9 /* UpdateCoordinatorMock.swift */,
+				9C54C5A424B43F8C002667D9 /* UpdateServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		9C54C5A624B44CC5002667D9 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				9C54C5A724B44CE7002667D9 /* Update.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		9C54C5B124B49193002667D9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9C54C5B224B4939D002667D9 /* UpdateManagerTests.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		9C8A7C1E24ADD351003B192E /* Extensions */ = {
@@ -254,6 +336,7 @@
 				9CB0EAD824AB06480004FCEE /* Uppy */,
 				9CB0EAE324AB06480004FCEE /* UppyTests */,
 				9CB0EAD724AB06480004FCEE /* Products */,
+				9C54C59524B429BA002667D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,6 +364,9 @@
 			isa = PBXGroup;
 			children = (
 				9CB0EAE424AB06480004FCEE /* UppyTests.swift */,
+				9C54C5B124B49193002667D9 /* Managers */,
+				9C54C59B24B42CAD002667D9 /* Mocks */,
+				9C54C59824B42C50002667D9 /* Helpers */,
 				9CB0EAE624AB06480004FCEE /* Info.plist */,
 			);
 			path = UppyTests;
@@ -335,6 +421,7 @@
 				9CB0EADB24AB06480004FCEE /* Sources */,
 				9CB0EADC24AB06480004FCEE /* Frameworks */,
 				9CB0EADD24AB06480004FCEE /* Resources */,
+				9C54C5AF24B46E32002667D9 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -398,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C54C5B524B4B811002667D9 /* Update.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +549,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C54C59D24B42CC3002667D9 /* AppMock.swift in Sources */,
+				9C54C59F24B42F7A002667D9 /* DeviceMock.swift in Sources */,
+				9C54C59A24B42C68002667D9 /* StubResponse.swift in Sources */,
+				9C54C5A924B4590C002667D9 /* UpdateCoordinatorMock.swift in Sources */,
 				9CB0EAE524AB06480004FCEE /* UppyTests.swift in Sources */,
+				9C54C5AB24B45F34002667D9 /* UpdateInteractorMock.swift in Sources */,
+				9C54C5A124B4314C002667D9 /* GlobalConfigMock.swift in Sources */,
+				9C54C5A524B43F8C002667D9 /* UpdateServiceMock.swift in Sources */,
+				9C54C5B324B4939D002667D9 /* UpdateManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,6 +753,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S69C38FM2Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UppyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -676,6 +776,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S69C38FM2Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UppyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
