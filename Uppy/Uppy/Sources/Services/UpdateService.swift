@@ -10,9 +10,9 @@ import Foundation
 
 class UpdateService {
 
-  func checkUpdates(_ completionHandler: @escaping (ObjectResponse<Update>?, ErrorResponse?) -> Void) {
+  func checkUpdates(for appVersion: String, with completionHandler: @escaping (ObjectResponse<Update>?, ErrorResponse?) -> Void) {
 
-    Request(endpoint: "/api/v1/updates/iOS/\(GlobalConfig.shared.app.getSDKVersion())")
+    Request(endpoint: "/api/v1/updates/iOS/\(appVersion)")
       .sendAsync { response in
 
         guard let data = response.data, response.isSuccess else {
