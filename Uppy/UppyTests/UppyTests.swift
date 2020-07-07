@@ -7,27 +7,69 @@
 //
 
 @testable import Uppy
+import OHHTTPStubs
 import XCTest
 
 class UppyTests: XCTestCase {
-
+  
+  var uppy: Uppy!
+  var globalConfig: GlobalConfigMock!
+  var updateService: UpdateServiceMock!
+  var updateInteractor: UpdateInteractorMock!
+  var updateCoordinator: UpdateCoordinatorMock!
+  
   override func setUp() {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    super.setUp()
+    globalConfig = GlobalConfigMock()
+    updateService = UpdateServiceMock()
+    updateInteractor = UpdateInteractorMock(globalConfig: globalConfig, updateManager: UpdateManager(updateService: updateService))
+    updateCoordinator = UpdateCoordinatorMock()
+    updateInteractor.outputMock = updateCoordinator
+    uppy = Uppy(config: globalConfig, updateInteractor: updateInteractor, updateCoordinator: updateCoordinator)
   }
-
+  
   override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    uppy = nil
+    globalConfig = nil
+    updateService = nil
+    updateInteractor = nil
+    updateCoordinator = nil
+    HTTPStubs.removeAllStubs()
+    super.tearDown()
   }
-
-  func testExample() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+  
+  func testNotNil() {
+    XCTAssertNotNil(uppy)
+    XCTAssertNotNil(globalConfig)
+    XCTAssertNotNil(updateService)
+    XCTAssertNotNil(updateInteractor)
+    XCTAssertNotNil(updateCoordinator)
   }
-
-  func testPerformanceExample() {
-    // This is an example of a performance test case.
-    measure {
-      // Put the code you want to measure the time of here.
-    }
+  
+  func testForceUpdate() {
+    updateInteractor.isForcedMock = true
+    uppy.initialize()
+    XCTAssertTrue(updateInteractor.startCalled)
+    XCTAssertTrue(updateInteractor.checkUpdatesCalled)
+    XCTAssertTrue(updateCoordinator.forceUpdateCalled)
+    XCTAssertFalse(updateCoordinator.otaUpdateCalled)
+  }
+  
+  func testOTAUpdate() {
+    updateInteractor.isForcedMock = false
+    uppy.initialize()
+    XCTAssertTrue(updateInteractor.startCalled)
+    XCTAssertTrue(updateInteractor.checkUpdatesCalled)
+    XCTAssertTrue(updateCoordinator.otaUpdateCalled)
+    XCTAssertFalse(updateCoordinator.forceUpdateCalled)
+  }
+  
+  func testCustomMode() {
+    uppy.initialize(with: .custom)
+    XCTAssertTrue(updateInteractor.startCalled)
+    XCTAssertTrue(updateInteractor.checkUpdatesCalled)
+    XCTAssertTrue(updateCoordinator.customModeCalled)
+    XCTAssertFalse(updateCoordinator.otaUpdateCalled)
+    XCTAssertFalse(updateCoordinator.forceUpdateCalled)
   }
 }
