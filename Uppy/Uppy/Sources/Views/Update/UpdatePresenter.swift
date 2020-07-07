@@ -14,11 +14,11 @@ protocol UpdatePresenterOutput {
 
 class UpdatePresenter {
 
-  var interactor: UpdateInteractor
   var output: UpdatePresenterOutput?
+  var coordinator: UpdateCoordinator
 
-  init(with interactor: UpdateInteractor) {
-    self.interactor = interactor
+  init(with coordinator: UpdateCoordinator) {
+    self.coordinator = coordinator
   }
 
   func viewDidLoad() {
@@ -26,6 +26,6 @@ class UpdatePresenter {
   }
 
   func didTappedUpdateButton() {
-    interactor.openDownloadLink()
+    coordinator.openDownloadLink()
   }
 }
