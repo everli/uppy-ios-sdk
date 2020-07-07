@@ -8,19 +8,15 @@
 
 import Foundation
 
-protocol UpdateManagerProtocol {
-  func checkUpdates(completionHandler: @escaping (Update?, ErrorResponse?) -> Void)
-}
+class UpdateManager {
 
-class UpdateManager: UpdateManagerProtocol {
-
-  fileprivate let updateService: UpdateService
+  private let updateService: UpdateService
 
   init(updateService: UpdateService) {
     self.updateService = updateService
   }
 
-  func checkUpdates(completionHandler: @escaping (Update?, ErrorResponse?) -> Void) {
-    updateService.checkUpdates { completionHandler($0?.data, $1) }
+  func checkUpdates(for appVersion: String, with completionHandler: @escaping (Update?, ErrorResponse?) -> Void) {
+    updateService.checkUpdates(for: appVersion) { completionHandler($0?.data, $1) }
   }
 }
