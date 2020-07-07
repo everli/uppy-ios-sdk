@@ -15,17 +15,14 @@ protocol UpdateCoordinatorOutput {
 
 class UpdateCoordinator {
 
-  var output: UpdateCoordinatorOutput?
-  var updateInteractor: UpdateInteractor
   var sdkMode: SDKMode = .native
+  var output: UpdateCoordinatorOutput?
 
+  private var downloadLink = ""
   private let app = GlobalConfig.shared.app
 
-  // MARK: - Initializers
-
-  init(updateInteractor: UpdateInteractor) {
-    self.updateInteractor = updateInteractor
-    self.updateInteractor.output = self
+  func openDownloadLink() {
+    app.openUrl(downloadLink)
   }
 }
 
@@ -35,33 +32,26 @@ extension UpdateCoordinator: UpdateInteractorOutput {
 
   func forceUpdate(update: Update) {
 
-    guard sdkMode == .native else {
-      output?.forceUpdateClient(with: update.downloadUrl ?? "")
-      return
-    }
+    downloadLink = update.downloadUrl ?? ""
 
-    let updatePresenter = UpdatePresenter(with: updateInteractor)
+    guard sdkMode == .native else { output?.forceUpdateClient(with: update.downloadUrl ?? ""); return }
+
+    let updatePresenter = UpdatePresenter(with: self)
     let updateStoryboard = UIStoryboard(name: "Update", bundle: Bundle.uppy())
     let updateViewController = updateStoryboard.instantiateViewController(withIdentifier: "UpdateViewController") as! UpdateViewController
     updateViewController.updatePresenter = updatePresenter
 
     let navigationController = UINavigationController(rootViewController: updateViewController)
-
-    app.waitForReadyThen { [weak self] in
-      self?.app.presentModal(navigationController, animated: true)
-    }
+    app.waitForReadyThen { [weak self] in self?.app.presentModal(navigationController, animated: true) }
   }
 
   func otaUpdate(update: Update) {
 
-    guard sdkMode == .native else {
-      output?.otaUpdateClient(with: update.downloadUrl ?? "")
-      return
-    }
+    guard sdkMode == .native else { output?.otaUpdateClient(with: update.downloadUrl ?? ""); return }
 
     app.waitForReadyThen { [weak self] in
       self?.app.showOtaAlert(Strings.otaUpdateMessage, updateHandler: { [weak self] in
-        _ = self?.app.openUrl(update.downloadUrl ?? "")
+        self?.app.openUrl(update.downloadUrl ?? "")
       })
     }
   }
