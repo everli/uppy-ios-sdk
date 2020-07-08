@@ -12,14 +12,10 @@ import XCTest
 class UpdatePresenterTests: XCTestCase {
   
   var updatePresenter: UpdatePresenter!
-  var updateService: UpdateServiceMock!
-  var updateInteractor: UpdateInteractorMock!
   var updateCoordinator: UpdateCoordinatorMock!
   
   override func setUp() {
     super.setUp()
-    updateService = UpdateServiceMock()
-    updateInteractor = UpdateInteractorMock(globalConfig: GlobalConfigMock(), updateManager: UpdateManager(updateService: updateService))
     updateCoordinator = UpdateCoordinatorMock()
     updatePresenter = UpdatePresenter(with: updateCoordinator)
   }
@@ -33,11 +29,6 @@ class UpdatePresenterTests: XCTestCase {
   func testNotNil() {
     XCTAssertNotNil(updateCoordinator)
     XCTAssertNotNil(updatePresenter)
-  }
-  
-  func testCheckUpdates() {
-    updateInteractor.checkUpdates(for: "")
-    XCTAssert(updateCoordinator.forceUpdateCalled == true)
   }
 }
 
