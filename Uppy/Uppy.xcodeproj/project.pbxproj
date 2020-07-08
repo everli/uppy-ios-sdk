@@ -33,6 +33,9 @@
 		9C54C5B024B46E63002667D9 /* OHHTTPStubs.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9C54C59624B429BA002667D9 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C54C5B324B4939D002667D9 /* UpdateManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5B224B4939D002667D9 /* UpdateManagerTests.swift */; };
 		9C54C5B524B4B811002667D9 /* Update.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C54C5A724B44CE7002667D9 /* Update.json */; };
+		9C6D321C24B5B5AB00011217 /* UpdateCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D321B24B5B5AB00011217 /* UpdateCoordinatorTests.swift */; };
+		9C6D321F24B5DBF600011217 /* UpdateInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D321E24B5DBF600011217 /* UpdateInteractorTests.swift */; };
+		9C6D322224B5EC8C00011217 /* UpdatePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D322124B5EC8C00011217 /* UpdatePresenterTests.swift */; };
 		9C8A7C1D24ADD1D8003B192E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A7C1C24ADD1D8003B192E /* App.swift */; };
 		9C8A7C2024ADD36A003B192E /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A7C1F24ADD36A003B192E /* Bundle+Extension.swift */; };
 		9C8A7C2424ADDC16003B192E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C8A7C2324ADDC16003B192E /* Localizable.strings */; };
@@ -99,6 +102,9 @@
 		9C54C5A824B4590C002667D9 /* UpdateCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCoordinatorMock.swift; sourceTree = "<group>"; };
 		9C54C5AA24B45F34002667D9 /* UpdateInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInteractorMock.swift; sourceTree = "<group>"; };
 		9C54C5B224B4939D002667D9 /* UpdateManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateManagerTests.swift; sourceTree = "<group>"; };
+		9C6D321B24B5B5AB00011217 /* UpdateCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCoordinatorTests.swift; sourceTree = "<group>"; };
+		9C6D321E24B5DBF600011217 /* UpdateInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInteractorTests.swift; sourceTree = "<group>"; };
+		9C6D322124B5EC8C00011217 /* UpdatePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePresenterTests.swift; sourceTree = "<group>"; };
 		9C8A7C1C24ADD1D8003B192E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		9C8A7C1F24ADD36A003B192E /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		9C8A7C2324ADDC16003B192E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -255,6 +261,30 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		9C6D321A24B5B58900011217 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				9C6D321B24B5B5AB00011217 /* UpdateCoordinatorTests.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		9C6D321D24B5DBD800011217 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				9C6D321E24B5DBF600011217 /* UpdateInteractorTests.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		9C6D322024B5EC5300011217 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9C6D322124B5EC8C00011217 /* UpdatePresenterTests.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
 		9C8A7C1E24ADD351003B192E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +394,9 @@
 			isa = PBXGroup;
 			children = (
 				9CB0EAE424AB06480004FCEE /* UppyTests.swift */,
+				9C6D321D24B5DBD800011217 /* Interactors */,
+				9C6D321A24B5B58900011217 /* Coordinators */,
+				9C6D322024B5EC5300011217 /* Presenters */,
 				9C54C5B124B49193002667D9 /* Managers */,
 				9C54C59B24B42CAD002667D9 /* Mocks */,
 				9C54C59824B42C50002667D9 /* Helpers */,
@@ -549,13 +582,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6D321F24B5DBF600011217 /* UpdateInteractorTests.swift in Sources */,
 				9C54C59D24B42CC3002667D9 /* AppMock.swift in Sources */,
 				9C54C59F24B42F7A002667D9 /* DeviceMock.swift in Sources */,
+				9C6D322224B5EC8C00011217 /* UpdatePresenterTests.swift in Sources */,
 				9C54C59A24B42C68002667D9 /* StubResponse.swift in Sources */,
 				9C54C5A924B4590C002667D9 /* UpdateCoordinatorMock.swift in Sources */,
 				9CB0EAE524AB06480004FCEE /* UppyTests.swift in Sources */,
 				9C54C5AB24B45F34002667D9 /* UpdateInteractorMock.swift in Sources */,
 				9C54C5A124B4314C002667D9 /* GlobalConfigMock.swift in Sources */,
+				9C6D321C24B5B5AB00011217 /* UpdateCoordinatorTests.swift in Sources */,
 				9C54C5A524B43F8C002667D9 /* UpdateServiceMock.swift in Sources */,
 				9C54C5B324B4939D002667D9 /* UpdateManagerTests.swift in Sources */,
 			);
