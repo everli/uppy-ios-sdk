@@ -1,10 +1,3 @@
-# Check if script is already running
-if [ "true" == ${ALREADYINVOKED:-false} ] then
-  echo "RECURSION: Detected, stopping"
-else
-  export ALREADYINVOKED="true"
-
-
 # Declare file names
 TARGET_NAME="Uppy"
 MODULE_NAME="Uppy.swiftmodule"
@@ -51,15 +44,18 @@ cp -r build/devices/${FRAMEWORK_NAME} build/
 lipo -create \
   build/simulator/${FRAMEWORK_NAME}/${TARGET_NAME} \
   build/devices/${FRAMEWORK_NAME}/${TARGET_NAME} \
-  -output build/universal/${FRAMEWORK_NAME}/${TARGET_NAME}
+  -output build/${FRAMEWORK_NAME}/${TARGET_NAME}
 
 # copy simulator Swift public interface to universal framework
 cp build/simulator/${FRAMEWORK_NAME}/Modules/${MODULE_NAME}/* build/${FRAMEWORK_NAME}/Modules/${MODULE_NAME}
 
+# zip the framework file
+mkdir Framework
+zip -r Framework/${TARGET_NAME}.zip build/${FRAMEWORK_NAME}
+
 # remove foldera
+rm -rf build/
 rm -rf derived_data
-rm -rf build/devices
-rm -rf build/simulator
 
 # Open build folder
 open build
