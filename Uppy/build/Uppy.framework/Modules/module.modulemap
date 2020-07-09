@@ -1,0 +1,11 @@
+framework module Uppy {
+  umbrella header "Uppy.h"
+
+  export *
+  module * { export * }
+}
+
+module Uppy.Swift {
+    header "Uppy-Swift.h"
+    requires objc
+}
