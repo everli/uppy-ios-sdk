@@ -1,3 +1,10 @@
+# Check if script is already running
+if [ "true" == ${ALREADYINVOKED:-false} ] then
+  echo "RECURSION: Detected, stopping"
+else
+  export ALREADYINVOKED="true"
+
+
 # Declare file names
 TARGET_NAME="Uppy"
 MODULE_NAME="Uppy.swiftmodule"
