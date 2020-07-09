@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,21 +21,21 @@
 		9C4A21D224B1AF5300F83432 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A21D124B1AF5300F83432 /* UpdateViewController.swift */; };
 		9C4A21D424B1AF6000F83432 /* UpdatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A21D324B1AF6000F83432 /* UpdatePresenter.swift */; };
 		9C4A21D624B1B3D500F83432 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A21D524B1B3D500F83432 /* UIColor+Extension.swift */; };
-		9C54C59724B429BA002667D9 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C54C59624B429BA002667D9 /* OHHTTPStubs.framework */; };
-		9C54C59A24B42C68002667D9 /* StubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C59924B42C68002667D9 /* StubResponse.swift */; };
-		9C54C59D24B42CC3002667D9 /* AppMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C59C24B42CC3002667D9 /* AppMock.swift */; };
-		9C54C59F24B42F7A002667D9 /* DeviceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C59E24B42F7A002667D9 /* DeviceMock.swift */; };
-		9C54C5A124B4314C002667D9 /* GlobalConfigMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5A024B4314C002667D9 /* GlobalConfigMock.swift */; };
-		9C54C5A524B43F8C002667D9 /* UpdateServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5A424B43F8C002667D9 /* UpdateServiceMock.swift */; };
-		9C54C5A924B4590C002667D9 /* UpdateCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5A824B4590C002667D9 /* UpdateCoordinatorMock.swift */; };
-		9C54C5AB24B45F34002667D9 /* UpdateInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5AA24B45F34002667D9 /* UpdateInteractorMock.swift */; };
-		9C54C5AE24B46E2C002667D9 /* Uppy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB0EAD624AB06480004FCEE /* Uppy.framework */; };
-		9C54C5B024B46E63002667D9 /* OHHTTPStubs.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9C54C59624B429BA002667D9 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9C54C5B324B4939D002667D9 /* UpdateManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5B224B4939D002667D9 /* UpdateManagerTests.swift */; };
-		9C54C5B524B4B811002667D9 /* Update.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C54C5A724B44CE7002667D9 /* Update.json */; };
-		9C6D321C24B5B5AB00011217 /* UpdateCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D321B24B5B5AB00011217 /* UpdateCoordinatorTests.swift */; };
-		9C6D321F24B5DBF600011217 /* UpdateInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D321E24B5DBF600011217 /* UpdateInteractorTests.swift */; };
-		9C6D322224B5EC8C00011217 /* UpdatePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D322124B5EC8C00011217 /* UpdatePresenterTests.swift */; };
+		9C54C59724B429BA002667D9 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C54C59624B429BA002667D9 /* OHHTTPStubs.framework */; platformFilter = ios; };
+		9C54C59A24B42C68002667D9 /* StubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C59924B42C68002667D9 /* StubResponse.swift */; platformFilter = ios; };
+		9C54C59D24B42CC3002667D9 /* AppMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C59C24B42CC3002667D9 /* AppMock.swift */; platformFilter = ios; };
+		9C54C59F24B42F7A002667D9 /* DeviceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C59E24B42F7A002667D9 /* DeviceMock.swift */; platformFilter = ios; };
+		9C54C5A124B4314C002667D9 /* GlobalConfigMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5A024B4314C002667D9 /* GlobalConfigMock.swift */; platformFilter = ios; };
+		9C54C5A524B43F8C002667D9 /* UpdateServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5A424B43F8C002667D9 /* UpdateServiceMock.swift */; platformFilter = ios; };
+		9C54C5A924B4590C002667D9 /* UpdateCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5A824B4590C002667D9 /* UpdateCoordinatorMock.swift */; platformFilter = ios; };
+		9C54C5AB24B45F34002667D9 /* UpdateInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5AA24B45F34002667D9 /* UpdateInteractorMock.swift */; platformFilter = ios; };
+		9C54C5AE24B46E2C002667D9 /* Uppy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB0EAD624AB06480004FCEE /* Uppy.framework */; platformFilter = ios; };
+		9C54C5B024B46E63002667D9 /* OHHTTPStubs.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9C54C59624B429BA002667D9 /* OHHTTPStubs.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C54C5B324B4939D002667D9 /* UpdateManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C5B224B4939D002667D9 /* UpdateManagerTests.swift */; platformFilter = ios; };
+		9C54C5B524B4B811002667D9 /* Update.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C54C5A724B44CE7002667D9 /* Update.json */; platformFilter = ios; };
+		9C6D321C24B5B5AB00011217 /* UpdateCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D321B24B5B5AB00011217 /* UpdateCoordinatorTests.swift */; platformFilter = ios; };
+		9C6D321F24B5DBF600011217 /* UpdateInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D321E24B5DBF600011217 /* UpdateInteractorTests.swift */; platformFilter = ios; };
+		9C6D322224B5EC8C00011217 /* UpdatePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D322124B5EC8C00011217 /* UpdatePresenterTests.swift */; platformFilter = ios; };
 		9C8A7C1D24ADD1D8003B192E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A7C1C24ADD1D8003B192E /* App.swift */; };
 		9C8A7C2024ADD36A003B192E /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A7C1F24ADD36A003B192E /* Bundle+Extension.swift */; };
 		9C8A7C2424ADDC16003B192E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C8A7C2324ADDC16003B192E /* Localizable.strings */; };
@@ -43,7 +43,7 @@
 		9C94ADD124ADA70C00716091 /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C94ADD024ADA70C00716091 /* GlobalConfig.swift */; };
 		9C94ADD324ADAA2F00716091 /* Uppy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C94ADD224ADAA2F00716091 /* Uppy.swift */; };
 		9C94ADD924ADBDD800716091 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C94ADD824ADBDD800716091 /* Log.swift */; };
-		9CB0EAE524AB06480004FCEE /* UppyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0EAE424AB06480004FCEE /* UppyTests.swift */; };
+		9CB0EAE524AB06480004FCEE /* UppyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0EAE424AB06480004FCEE /* UppyTests.swift */; platformFilter = ios; };
 		9CB0EAE724AB06480004FCEE /* Uppy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CB0EAD924AB06480004FCEE /* Uppy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CB2163C24AF009E0054FA01 /* ErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2163B24AF009E0054FA01 /* ErrorFactory.swift */; };
 		9CB2163F24AF0CB90054FA01 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2163E24AF0CB90054FA01 /* ErrorResponse.swift */; };
@@ -602,6 +602,7 @@
 /* Begin PBXTargetDependency section */
 		9CB0EAE224AB06480004FCEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 9CB0EAD524AB06480004FCEE /* Uppy */;
 			targetProxy = 9CB0EAE124AB06480004FCEE /* PBXContainerItemProxy */;
 		};
@@ -659,7 +660,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -716,7 +717,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -750,6 +751,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uppy.ios-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -778,6 +780,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uppy.ios-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
