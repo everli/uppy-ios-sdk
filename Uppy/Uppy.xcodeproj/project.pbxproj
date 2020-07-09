@@ -6,6 +6,20 @@
 	objectVersion = 52;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9C7F444F24B6FDA500274B45 /* UppyUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9C7F445024B6FDA500274B45 /* Build configuration list for PBXAggregateTarget "UppyUniversal" */;
+			buildPhases = (
+				9C7F445324B6FDD300274B45 /* Build Universal Binary */,
+			);
+			dependencies = (
+			);
+			name = UppyUniversal;
+			productName = UppyUniversal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		9C0686C524B1FB4300B5D928 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0686C424B1FB4300B5D928 /* Strings.swift */; };
 		9C0686C724B1FB5A00B5D928 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0686C624B1FB5A00B5D928 /* Localize.swift */; };
@@ -476,6 +490,9 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Everli;
 				TargetAttributes = {
+					9C7F444F24B6FDA500274B45 = {
+						CreatedOnToolsVersion = 11.3;
+					};
 					9CB0EAD524AB06480004FCEE = {
 						CreatedOnToolsVersion = 11.3;
 						LastSwiftMigration = 1130;
@@ -500,6 +517,7 @@
 			targets = (
 				9CB0EAD524AB06480004FCEE /* Uppy */,
 				9CB0EADE24AB06480004FCEE /* UppyTests */,
+				9C7F444F24B6FDA500274B45 /* UppyUniversal */,
 			);
 		};
 /* End PBXProject section */
@@ -525,6 +543,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9C7F445324B6FDD300274B45 /* Build Universal Binary */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Universal Binary";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./$(SRCROOT)/universal-build.sh\n";
+		};
 		9CD5C6B824B2112B0068D7B5 /* SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -609,6 +645,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		9C7F445124B6FDA500274B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S69C38FM2Y;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C7F445224B6FDA500274B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S69C38FM2Y;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		9CB0EAE824AB06480004FCEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -835,6 +889,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9C7F445024B6FDA500274B45 /* Build configuration list for PBXAggregateTarget "UppyUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C7F445124B6FDA500274B45 /* Debug */,
+				9C7F445224B6FDA500274B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9CB0EAD024AB06480004FCEE /* Build configuration list for PBXProject "Uppy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
