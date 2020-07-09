@@ -7,6 +7,5 @@ Pod::Spec.new do |spec|
   spec.author       = { "Arpit Williams" => "arpitwilliams@yahoo.com" }
   spec.platform     = :ios, "9.3"
   spec.source       = { :http => "https://github.com/Supermercato24/uppy-ios-sdk/blob/master/Uppy/Framework/Uppy.zip" }
-  spec.vendored_frameworks = "Framekwork/Uppy.framework"
   spec.swift_version       = "5.0"
 end
