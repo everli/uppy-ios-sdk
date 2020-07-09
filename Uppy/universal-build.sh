@@ -57,8 +57,5 @@ zip -r Framework/${TARGET_NAME}.zip build/${FRAMEWORK_NAME}
 rm -rf build/
 rm -rf derived_data
 
-# Open build folder
-open build
-
 # Print completion message
 echo "\n💥 Completed Building Universal Binary Framework\n"
