@@ -38,7 +38,7 @@ cp -r derived_data/Build/Products/Release-iphoneos/${FRAMEWORK_NAME} build/devic
 ####################### Create universal framework #############################
 
 # copy device framework into build folder
-cp -r build/devices/${FRAMEWORK_NAME} .
+cp -r build/devices/${FRAMEWORK_NAME} build/
 
 # create binary framework compatible with iPhoneSimulator and iPhoneOS
 lipo -create \
