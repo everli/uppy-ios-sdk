@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
   spec.version      = "1.0.0"
   spec.summary      = "Uppy iOS SDK allows provides api's to control forced and manual updates for your iOS app."
   spec.homepage     = "https://github.com/awilliams88"
-  spec.license      = { :type => 'MIT', :file => 'MIT' }
+  spec.license      = { :type => 'MIT', :file => 'Uppy/MIT' }
   spec.author       = { "Arpit Williams" => "arpitwilliams@yahoo.com" }
   spec.platform     = :ios, "9.3"
   spec.source       = { :git => "https://github.com/Supermercato24/uppy-ios-sdk.git", :tag => "#{spec.version}" }
