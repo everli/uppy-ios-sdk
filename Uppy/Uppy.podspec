@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "Arpit Williams" => "arpitwilliams@yahoo.com" }
   spec.platform     = :ios, "9.3"
   spec.source       = { :git => "https://github.com/Supermercato24/uppy-ios-sdk.git", :tag => "#{spec.version}" }
-  spec.ios.vendored_frameworks = "build/Uppy.framework"
-  spec.exclude_files = "UppyTests", "Uppy/Carthage"
+  spec.ios.vendored_frameworks = "Uppy/build/Uppy.framework"
+  spec.exclude_files = "Uppy/UppyTests", "Uppy/Carthage"
   spec.swift_version = "5.0"
 end
