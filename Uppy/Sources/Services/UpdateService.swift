@@ -12,18 +12,15 @@ class UpdateService {
 
   func checkUpdates(for appVersion: String, with completionHandler: @escaping (ObjectResponse<Update>?, ErrorResponse?) -> Void) {
 
-    Request(endpoint: "/api/v1/updates/iOS/\(appVersion)")
-      .sendAsync { response in
+    // @Arpit: Remove test data
+    let mockData = "{ \"forced\" : true, \"download_url\" : \"https://www.google.com/\", \"version\" : \"1.0.0\" }"
+    guard let data = mockData.data(using: .utf8), let update = try? JSONDecoder().decode(Update.self, from: data) else { return }
+    completionHandler(ObjectResponse(data: update), nil)
 
-        // @Arpit: Remove test data
-        let mockData = "{ \"data\": { \"forced\" : true, \"download_url\" : \"google.com\", \"version\" : \"7.1.0\" } }"
-        guard let data = mockData.data(using: .utf8), let update = try? JSONDecoder().decode(Update.self, from: data) else {
-          completionHandler(nil, try? ErrorFactory.decodeError(from: response))
-          return
-        }
-        completionHandler(ObjectResponse(data: update), nil)
-
-        // @Arpit: Uncomment code onces api is on staging
+    // @Arpit: Uncomment code onces api is on staging
+//    Request(endpoint: "/api/v1/updates/iOS/\(appVersion)")
+//      .sendAsync { response in
+//
 //        guard let data = response.data, response.isSuccess else {
 //          completionHandler(nil, try? ErrorFactory.decodeError(from: response))
 //          logError(response.error)
@@ -38,6 +35,6 @@ class UpdateService {
 //          completionHandler(nil, try? ErrorFactory.decodeError(from: response))
 //          logError(error)
 //        }
-      }
+//      }
   }
 }
