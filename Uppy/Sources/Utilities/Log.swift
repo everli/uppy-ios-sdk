@@ -13,7 +13,7 @@ func >= (levelA: LogLevel, levelB: LogLevel) -> Bool {
 }
 
 func log(_ log: String) {
-  print("UPPY::" + log)
+  print("☀️ UPPY:: " + log)
 }
 
 func logInfo(_ message: String) {

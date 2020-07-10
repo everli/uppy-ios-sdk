@@ -26,7 +26,7 @@ class UpdateInteractor {
   }
 
   func start() {
-    logInfo("☀️ UPPY INITIALIZED 🕊 ")
+    logInfo("UPPY INITIALIZED 🕊")
     logInfo("SDK Version: \(globalConfig.app.getSDKVersion())")
     checkUpdates(for: globalConfig.app.getVersion())
   }
