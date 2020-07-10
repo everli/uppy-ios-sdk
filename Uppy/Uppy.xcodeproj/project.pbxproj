@@ -119,6 +119,8 @@
 		9C6D321B24B5B5AB00011217 /* UpdateCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCoordinatorTests.swift; sourceTree = "<group>"; };
 		9C6D321E24B5DBF600011217 /* UpdateInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInteractorTests.swift; sourceTree = "<group>"; };
 		9C6D322124B5EC8C00011217 /* UpdatePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePresenterTests.swift; sourceTree = "<group>"; };
+		9C731F8E24B898B600761406 /* Uppy.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = Uppy.podspec; sourceTree = SOURCE_ROOT; };
+		9C731F8F24B898EA00761406 /* universal-build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "universal-build.sh"; sourceTree = SOURCE_ROOT; };
 		9C8A7C1C24ADD1D8003B192E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		9C8A7C1F24ADD36A003B192E /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		9C8A7C2324ADDC16003B192E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -322,6 +324,8 @@
 			children = (
 				9CB0EAD924AB06480004FCEE /* Uppy.h */,
 				9CB0EADA24AB06480004FCEE /* Info.plist */,
+				9C731F8E24B898B600761406 /* Uppy.podspec */,
+				9C731F8F24B898EA00761406 /* universal-build.sh */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
