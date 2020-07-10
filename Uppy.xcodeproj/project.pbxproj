@@ -94,7 +94,8 @@
 /* Begin PBXFileReference section */
 		9C0686C424B1FB4300B5D928 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		9C0686C624B1FB5A00B5D928 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
-		9C2C13FA24B8CF77006F9A54 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Uppy/README.md; sourceTree = SOURCE_ROOT; };
+		9C2C13FA24B8CF77006F9A54 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		9C2C13FE24B8D770006F9A54 /* universal-build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "universal-build.sh"; path = "Scripts/universal-build.sh"; sourceTree = SOURCE_ROOT; };
 		9C48790624AE3BBC0075054D /* InteractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorFactory.swift; sourceTree = "<group>"; };
 		9C48790924AE3E610075054D /* UpdateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInteractor.swift; sourceTree = "<group>"; };
 		9C48790E24AE44ED0075054D /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
@@ -121,7 +122,6 @@
 		9C6D321E24B5DBF600011217 /* UpdateInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInteractorTests.swift; sourceTree = "<group>"; };
 		9C6D322124B5EC8C00011217 /* UpdatePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePresenterTests.swift; sourceTree = "<group>"; };
 		9C731F8E24B898B600761406 /* Uppy.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Uppy.podspec; sourceTree = SOURCE_ROOT; };
-		9C731F8F24B898EA00761406 /* universal-build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "universal-build.sh"; sourceTree = SOURCE_ROOT; };
 		9C8A7C1C24ADD1D8003B192E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		9C8A7C1F24ADD36A003B192E /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		9C8A7C2324ADDC16003B192E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -163,6 +163,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C2C13FD24B8D754006F9A54 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9C2C13FE24B8D770006F9A54 /* universal-build.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		9C48790824AE3E310075054D /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,8 +333,6 @@
 			children = (
 				9CB0EAD924AB06480004FCEE /* Uppy.h */,
 				9CB0EADA24AB06480004FCEE /* Info.plist */,
-				9C731F8E24B898B600761406 /* Uppy.podspec */,
-				9C731F8F24B898EA00761406 /* universal-build.sh */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -402,8 +408,10 @@
 			isa = PBXGroup;
 			children = (
 				9C2C13FA24B8CF77006F9A54 /* README.md */,
+				9C731F8E24B898B600761406 /* Uppy.podspec */,
 				9C94ADCB24AD7F4200716091 /* Public */,
 				9C94ADCC24AD7F4B00716091 /* Sources */,
+				9C2C13FD24B8D754006F9A54 /* Scripts */,
 				9C8A7C2224ADDBE9003B192E /* Resources */,
 				9C94ADCA24AD7F3700716091 /* Supporting Files */,
 			);
