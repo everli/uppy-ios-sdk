@@ -4,6 +4,9 @@ MODULE_NAME="Uppy.swiftmodule"
 FRAMEWORK_NAME="Uppy.framework"
 PROJECT_NAME="Uppy.xcodeproj"
 
+# remove existing framework
+rm -rf ${FRAMEWORK_NAME}
+
 # create build folder
 mkdir build
 
@@ -37,8 +40,8 @@ cp -r derived_data/Build/Products/Release-iphoneos/${FRAMEWORK_NAME} build/devic
 
 ####################### Create universal framework #############################
 
-# copy device framework into build folder
-cp -r build/devices/${FRAMEWORK_NAME} build/
+# copy device framework into root folder
+cp -r build/devices/${FRAMEWORK_NAME} .
 
 # create binary framework compatible with iPhoneSimulator and iPhoneOS
 lipo -create \
