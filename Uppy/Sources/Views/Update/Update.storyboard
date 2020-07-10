@@ -16,35 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="buD-qH-j6R">
-                                <rect key="frame" x="20" y="396.5" width="374" height="103"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otS-qG-YF2">
-                                        <rect key="frame" x="166" y="0.0" width="42" height="23"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCQ-Xa-sAm">
-                                        <rect key="frame" x="40" y="63" width="294" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="0Ry-Nh-JDh"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                </subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otS-qG-YF2">
+                                <rect key="frame" x="20" y="438" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCQ-Xa-sAm">
+                                <rect key="frame" x="20" y="802" width="374" height="40"/>
                                 <constraints>
-                                    <constraint firstItem="yCQ-Xa-sAm" firstAttribute="leading" secondItem="buD-qH-j6R" secondAttribute="leading" constant="40" id="SGM-Fk-wvu"/>
-                                    <constraint firstAttribute="trailing" secondItem="yCQ-Xa-sAm" secondAttribute="trailing" constant="40" id="gTx-ur-JWD"/>
+                                    <constraint firstAttribute="height" constant="40" id="0Ry-Nh-JDh"/>
                                 </constraints>
-                            </stackView>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="buD-qH-j6R" firstAttribute="centerX" secondItem="hNg-uu-f8l" secondAttribute="centerX" id="EBY-yp-VsC"/>
-                            <constraint firstItem="ExP-bT-4TJ" firstAttribute="trailing" secondItem="buD-qH-j6R" secondAttribute="trailing" constant="20" id="KVn-Fc-rgC"/>
-                            <constraint firstItem="buD-qH-j6R" firstAttribute="centerY" secondItem="hNg-uu-f8l" secondAttribute="centerY" id="L3s-3x-qlS"/>
-                            <constraint firstItem="buD-qH-j6R" firstAttribute="leading" secondItem="ExP-bT-4TJ" secondAttribute="leading" constant="20" id="zjG-gt-dSd"/>
+                            <constraint firstItem="ExP-bT-4TJ" firstAttribute="trailing" secondItem="otS-qG-YF2" secondAttribute="trailing" constant="20" id="7yY-8I-142"/>
+                            <constraint firstItem="yCQ-Xa-sAm" firstAttribute="leading" secondItem="ExP-bT-4TJ" secondAttribute="leading" constant="20" id="P3W-zR-E9S"/>
+                            <constraint firstItem="ExP-bT-4TJ" firstAttribute="trailing" secondItem="yCQ-Xa-sAm" secondAttribute="trailing" constant="20" id="qK7-91-DtL"/>
+                            <constraint firstItem="ExP-bT-4TJ" firstAttribute="bottom" secondItem="yCQ-Xa-sAm" secondAttribute="bottom" constant="20" id="uke-cl-9WX"/>
+                            <constraint firstItem="otS-qG-YF2" firstAttribute="leading" secondItem="ExP-bT-4TJ" secondAttribute="leading" constant="20" id="vhs-f0-5Iy"/>
+                            <constraint firstItem="otS-qG-YF2" firstAttribute="centerY" secondItem="hNg-uu-f8l" secondAttribute="centerY" id="zMJ-xx-qve"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ExP-bT-4TJ"/>
                     </view>

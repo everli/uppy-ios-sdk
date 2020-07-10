@@ -27,17 +27,16 @@ class UpdateViewController: UIViewController {
   }
 
   private func setupView() {
-    title = Strings.uppy
+    navigationController?.navigationBar.isHidden = true
 
-    forceUpdateLabel.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+    forceUpdateLabel.font = UIFont.systemFont(ofSize: 20, weight: .medium)
     forceUpdateLabel.textColor = UIColor.Violet.Camerlot
     forceUpdateLabel.textAlignment = .center
 
-    forceUpdateButton.layer.borderWidth = 2
-    forceUpdateButton.layer.borderColor = UIColor.Violet.Camerlot.cgColor
-
-    forceUpdateButton.setTitleColor(UIColor.Violet.Camerlot, for: .normal)
-    forceUpdateButton.setTitle(Strings.update, for: .normal)
+    forceUpdateButton.layer.cornerRadius = 6
+    forceUpdateButton.setTitleColor(.white, for: .normal)
+    forceUpdateButton.backgroundColor = UIColor.Violet.Camerlot
+    forceUpdateButton.setTitle(Strings.update.uppercased(), for: .normal)
     forceUpdateButton.addTarget(self, action: #selector(forcedUpdateButtonTapped), for: .touchUpInside)
   }
 
