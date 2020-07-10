@@ -49,13 +49,10 @@ lipo -create \
 # copy simulator Swift public interface to universal framework
 cp build/simulator/${FRAMEWORK_NAME}/Modules/${MODULE_NAME}/* build/${FRAMEWORK_NAME}/Modules/${MODULE_NAME}
 
-# zip the framework file
-mkdir Framework
-zip -r Framework/${TARGET_NAME}.zip build/${FRAMEWORK_NAME}
-
 # remove foldera
-rm -rf build/
 rm -rf derived_data
+rm -rf build/devices
+rm -rf build/simulator
 
 # Print completion message
 echo "\n💥 Completed Building Universal Binary Framework\n"
