@@ -38,21 +38,20 @@ cp -r derived_data/Build/Products/Release-iphoneos/${FRAMEWORK_NAME} build/devic
 ####################### Create universal framework #############################
 
 # copy device framework into build folder
-cp -r build/devices/${FRAMEWORK_NAME} build/
+cp -r build/devices/${FRAMEWORK_NAME} .
 
 # create binary framework compatible with iPhoneSimulator and iPhoneOS
 lipo -create \
   build/simulator/${FRAMEWORK_NAME}/${TARGET_NAME} \
   build/devices/${FRAMEWORK_NAME}/${TARGET_NAME} \
-  -output build/${FRAMEWORK_NAME}/${TARGET_NAME}
+  -output ${FRAMEWORK_NAME}/${TARGET_NAME}
 
 # copy simulator Swift public interface to universal framework
-cp build/simulator/${FRAMEWORK_NAME}/Modules/${MODULE_NAME}/* build/${FRAMEWORK_NAME}/Modules/${MODULE_NAME}
+cp build/simulator/${FRAMEWORK_NAME}/Modules/${MODULE_NAME}/* ${FRAMEWORK_NAME}/Modules/${MODULE_NAME}
 
 # remove foldera
+rm -rf build/
 rm -rf derived_data
-rm -rf build/devices
-rm -rf build/simulator
 
 # Print completion message
 echo "\n💥 Completed Building Universal Binary Framework\n"
