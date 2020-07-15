@@ -1,7 +1,7 @@
 # Uppy iOS SDK
 
 
-![Uppy Logo](https://pbs.twimg.com/profile_banners/4307299888/1545390981/1500x500.jpeg)
+![Uppy Logo](https://pbs.twimg.com/profile_banners/4307299888/1545390981/1500x500)
 
 [![License](https://img.shields.io/cocoapods/l/razorpay-pod.svg?style=flat)](http://cocoapods.org/pods/razorpay-pod)
 [![Platform](https://img.shields.io/cocoapods/p/razorpay-pod.svg?style=flat)](http://cocoapods.org/pods/razorpay-pod)
@@ -70,13 +70,9 @@ and then run `pod install`. More info about CocoaPods [here](https://cocoapods.o
 
 ### Manual installation
 
-1. Download the Applivery.framework [here](https://github.com/Supermercato24/uppy-ios-sdk/tree/master/Uppy.framework)
+1. Download the Uppy.framework [here](https://github.com/Supermercato24/uppy-ios-sdk/tree/master/Uppy.framework)
 2. Drag it to your frameworks folder
 3. Add it to "Frameworks, Libraries, and Embedded Content"
-
-If your project is written in Objective-C, you should also enable the "_Always Embed Swift Standard Libraries_" option. You'll find it in the _Build Settings_ section:
-
-![Embedded binaries](https://raw.githubusercontent.com/applivery/applivery-ios-sdk/master/documentation/embedded_content.png)
 
 ## SDK Setup
 
@@ -102,7 +98,7 @@ Uppy.shared.initialize(with mode:)(
 
 The compatibility version is as follow:
 
-| Applivery Version | Xcode Version  | Swift Version |
+| Uppy Version | Xcode Version  | Swift Version |
 |-------------------|----------------|---------------|
 | **v1.0**          | 11.x           |  5.x |
 
