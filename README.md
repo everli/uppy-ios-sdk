@@ -1,8 +1,6 @@
 # Uppy iOS SDK
 
 
-![Uppy Logo](https://pbs.twimg.com/profile_banners/4307299888/1545390981/1500x500)
-
 [![License](https://img.shields.io/cocoapods/l/razorpay-pod.svg?style=flat)](http://cocoapods.org/pods/razorpay-pod)
 [![Platform](https://img.shields.io/cocoapods/p/razorpay-pod.svg?style=flat)](http://cocoapods.org/pods/razorpay-pod)
 ![Language](https://img.shields.io/badge/Language-Swift-orange.svg)
@@ -93,7 +91,7 @@ and then initialize the sdk:
 Uppy.shared.initialize(with baseUrl: and mode:)
 ```
 * **baseUrl**: It is a string which provides the url path for the Uppy server.
-  **mode**: It is an enum of type `SDKMode`, which is used during initialization for controlling the views for OTA & Forced update. There are two types of modes: 
+* **mode**: It is an enum of type `SDKMode`, which is used during initialization for controlling the views for OTA & Forced update. There are two types of modes: 
   * native: This mode is used to show native view elements of Uppy ios sdk.
   * custom: This mode is used to present custom views for OTA alert & Forced update screen.
 
