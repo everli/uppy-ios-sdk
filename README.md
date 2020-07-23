@@ -76,7 +76,7 @@ More info about CocoaPods [here](https://cocoapods.org)
 
 ## SDK Setup
 
-At your application start up (for example in the _AppDelegate) add the following code:
+At your application start up (for example in the `AppDelegate`) add the following code:
 
 ### Swift
 
@@ -95,38 +95,39 @@ Uppy.shared.initialize(with baseUrl: and mode:)
   * native: This mode is used to show native view elements of Uppy ios sdk.
   * custom: This mode is used to present custom views for OTA alert & Forced update screen.
 
-## Swift & Xcode version support
-
-The compatibility version is as follow:
-
-| Uppy Version | Xcode Version  | Swift Version |
-|-------------------|----------------|---------------|
-| **v1.0**          | 11.x           |  5.x |
-
 ## Advanced concepts
 
 ### Customise view for manual & force update
 
-You can customize the update process to be fully controlled by the host app. In order to achive that, you must first initialize the sdk with `custom SDKMode`. Then you can use the following method to return callback for manual or force update: 
+You can customize the update process to be fully controlled by the host app. In order to achive that, you must first initialize the sdk with `custom SDKMode`.
+Then you can use the following method to return callback for manual or force update: 
 
 ```swift
 func getUpdate(with completionHandler: ((_ downloadUrl: String, _ isForced: Bool) -> Void)?)
 ```
 * **Completion handler parameters**:
-  *  downloadUrl: String - Contains the download link for the latest build.
-   * isForced: Bool - Checks if the latest update is forced.
+  * downloadUrl: String - Contains the download link for the latest build.
+  * isForced: Bool - Checks if the latest update is forced.
    
-- NOTE: Be sure to call `initiate(with mode:)` before calling this method.
+- NOTE: Be sure to call `initialize(with baseUrl: and mode:)` before calling this method.
 
 ### Logs and debugging
 
 In some cases you'll find usefull to see what is happening inside Uppy SDK. If so, you can change log level for debugging purposes with.
 
 ``` swift
-GlobalConfig.shared.logLevel = .info
+func setLogLevel(_ logLevel: LogLevel)
 ```
 * **LogLevel**: It is an enum which is used to contol the types of logs which are displayed for the Uppy iOS sdk. There are four types of log levels: 
   *  none: No log will be shown.
   *  error: Only warnings and errors are shown.
   *  info: Errors and relevant information is shown. This is the default log level too.
   *  debug: Requests and Responses from server are shown along with warnings & erros.
+  
+  ## Swift & Xcode version support
+
+  The compatibility version is as follow:
+
+  | Uppy Version | Xcode Version  | Swift Version |
+  |-------------------|----------------|---------------|
+  | **v1.0**          | 11.x           |  5.x |
