@@ -33,8 +33,9 @@ extension UpdateCoordinator: UpdateInteractorOutput {
   func forceUpdate(update: Update) {
 
     downloadLink = update.downloadUrl ?? ""
+    output?.forceUpdateClient(with: downloadLink)
 
-    guard sdkMode == .native else { output?.forceUpdateClient(with: update.downloadUrl ?? ""); return }
+    guard sdkMode == .native else { return }
 
     let updatePresenter = UpdatePresenter(with: self)
     let updateStoryboard = UIStoryboard(name: "Update", bundle: Bundle.uppy())
@@ -47,7 +48,9 @@ extension UpdateCoordinator: UpdateInteractorOutput {
 
   func otaUpdate(update: Update) {
 
-    guard sdkMode == .native else { output?.otaUpdateClient(with: update.downloadUrl ?? ""); return }
+    output?.otaUpdateClient(with: update.downloadUrl ?? "")
+
+    guard sdkMode == .native else { return }
 
     app.waitForReadyThen { [weak self] in
       self?.app.showOtaAlert(Strings.otaUpdateMessage, updateHandler: { [weak self] in

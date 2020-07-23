@@ -61,7 +61,7 @@ class Request {
   }
 
   private func buildURL() -> URL? {
-    guard var url = URLComponents(string: GlobalConfig.baseUrl) else { return nil }
+    guard var url = URLComponents(string: GlobalConfig.shared.baseUrl) else { return nil }
     url.path += endpoint
     if urlParams.isEmpty == false { url.queryItems = urlParams.map(URLQueryItem.init(name:value:)) }
     return url.url

@@ -51,9 +51,11 @@ extension Uppy {
   /*
    Initializes sdk with given mode
    - Parameters:
+      - baseUrl: String - Provides url path for Uppy server.
       - mode: SDKMode - Provides native or custom view for updating to latest build.
    */
-  @objc public func initialize(with mode: SDKMode = .native) {
+  @objc public func initialize(with baseUrl: String, and mode: SDKMode = .native) {
+    globalConfig.baseUrl = baseUrl
     updateCoordinator.sdkMode = mode
     updateInteractor.start()
   }
@@ -67,6 +69,15 @@ extension Uppy {
    */
   @objc public func getUpdate(with completionHandler: ((_ downloadUrl: String, _ isForced: Bool) -> Void)?) {
     updateCompletionHandler = completionHandler
+  }
+  
+  /*
+   Sets the log level of sdk for debugging purposes.
+   - Parameters:
+      - logLevel: LogLevel - Sets the types of logs which are displayed for the Uppy iOS sdk.
+   */
+  @objc public func setLogLevel(_ logLevel: LogLevel) {
+    globalConfig.logLevel = logLevel
   }
 }
 

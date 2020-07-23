@@ -48,7 +48,7 @@ class UppyTests: XCTestCase {
   
   func testForceUpdate() {
     updateInteractor.isForcedMock = true
-    uppy.initialize()
+    uppy.initialize(with: "www.test.com")
     XCTAssertTrue(updateInteractor.startCalled)
     XCTAssertTrue(updateInteractor.checkUpdatesCalled)
     XCTAssertTrue(updateCoordinator.forceUpdateCalled)
@@ -57,7 +57,7 @@ class UppyTests: XCTestCase {
   
   func testOTAUpdate() {
     updateInteractor.isForcedMock = false
-    uppy.initialize()
+    uppy.initialize(with: "www.test.com")
     XCTAssertTrue(updateInteractor.startCalled)
     XCTAssertTrue(updateInteractor.checkUpdatesCalled)
     XCTAssertTrue(updateCoordinator.otaUpdateCalled)
@@ -65,7 +65,7 @@ class UppyTests: XCTestCase {
   }
   
   func testCustomMode() {
-    uppy.initialize(with: .custom)
+    uppy.initialize(with: "www.test.com", and: .custom)
     XCTAssertTrue(updateInteractor.startCalled)
     XCTAssertTrue(updateInteractor.checkUpdatesCalled)
     XCTAssertTrue(updateCoordinator.customModeCalled)

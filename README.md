@@ -1,8 +1,6 @@
 # Uppy iOS SDK
 
 
-![Uppy Logo](https://pbs.twimg.com/profile_banners/4307299888/1545390981/1500x500)
-
 [![License](https://img.shields.io/cocoapods/l/razorpay-pod.svg?style=flat)](http://cocoapods.org/pods/razorpay-pod)
 [![Platform](https://img.shields.io/cocoapods/p/razorpay-pod.svg?style=flat)](http://cocoapods.org/pods/razorpay-pod)
 ![Language](https://img.shields.io/badge/Language-Swift-orange.svg)
@@ -28,13 +26,13 @@ Uppy iOS SDK provides api's for controlling manual & forced updates for iOS app.
 ### Features
 
 * **Automatic OTA Updates** when uploading new versions to Uppy.
-* **Force update** if App version is lower than the minimum version configured in Uppy.
+* **Force update** if App version is lower than the minimum supported version configured in Uppy.
 
 ## SDK Installation
 
 ### Using Carthage
 
-Install carthage with using brew
+Install carthage with brew
 
 ```bash
 brew update && brew install carthage
@@ -43,7 +41,7 @@ brew update && brew install carthage
 Add the following line to your's Cartfile
 
 ```bash
-github "Supermercato24/uppy-ios-sdk" ~> 1.0
+github "Everli/uppy-ios-sdk" ~> 1.0
 ```
 
 Run `carthage update` and then drag the built framework into your project. 
@@ -66,7 +64,9 @@ target '<Your Target Name>' do
 end
 ```
 
-and then run `pod install`. More info about CocoaPods [here](https://cocoapods.org)
+and then run `pod install`. 
+
+More info about CocoaPods [here](https://cocoapods.org)
 
 ### Manual installation
 
@@ -76,7 +76,7 @@ and then run `pod install`. More info about CocoaPods [here](https://cocoapods.o
 
 ## SDK Setup
 
-At your application start up (for example in the _AppDelegate) add the following code:
+At your application start up (for example in the `AppDelegate`) add the following code:
 
 ### Swift
 
@@ -88,44 +88,46 @@ import Uppy
 and then initialize the sdk:
 
 ``` swift
-Uppy.shared.initialize(with mode:)(
+Uppy.shared.initialize(with baseUrl: and mode:)
 ```
+* **baseUrl**: It is a string which provides the url path for the Uppy server.
 * **mode**: It is an enum of type `SDKMode`, which is used during initialization for controlling the views for OTA & Forced update. There are two types of modes: 
   * native: This mode is used to show native view elements of Uppy ios sdk.
   * custom: This mode is used to present custom views for OTA alert & Forced update screen.
-
-## Swift & Xcode version support
-
-The compatibility version is as follow:
-
-| Uppy Version | Xcode Version  | Swift Version |
-|-------------------|----------------|---------------|
-| **v1.0**          | 11.x           |  5.x |
 
 ## Advanced concepts
 
 ### Customise view for manual & force update
 
-You can customize the update process to be fully controlled by the host app. In order to achive that, you must first initialize the sdk with `custom SDKMode`. Then you can use the following method to return callback for manual or force update: 
+You can customize the update process to be fully controlled by the host app. In order to achive that, you must first initialize the sdk with `custom SDKMode`.
+Then you can use the following method to return callback for manual or force update: 
 
 ```swift
 func getUpdate(with completionHandler: ((_ downloadUrl: String, _ isForced: Bool) -> Void)?)
 ```
 * **Completion handler parameters**:
-  *  downloadUrl: String - Contains the download link for the latest build.
-   * isForced: Bool - Checks if the latest update is forced.
+  * downloadUrl: String - Contains the download link for the latest build.
+  * isForced: Bool - Checks if the latest update is forced.
    
-- NOTE: Be sure to call `initiate(with mode:)` before calling this method.
+- NOTE: Be sure to call `initialize(with baseUrl: and mode:)` before calling this method.
 
 ### Logs and debugging
 
 In some cases you'll find usefull to see what is happening inside Uppy SDK. If so, you can change log level for debugging purposes with.
 
 ``` swift
-GlobalConfig.shared.logLevel = .info
+func setLogLevel(_ logLevel: LogLevel)
 ```
 * **LogLevel**: It is an enum which is used to contol the types of logs which are displayed for the Uppy iOS sdk. There are four types of log levels: 
   *  none: No log will be shown.
   *  error: Only warnings and errors are shown.
   *  info: Errors and relevant information is shown. This is the default log level too.
   *  debug: Requests and Responses from server are shown along with warnings & erros.
+  
+  ## Swift & Xcode version support
+
+  The compatibility version is as follow:
+
+  | Uppy Version | Xcode Version  | Swift Version |
+  |-------------------|----------------|---------------|
+  | **v1.0**          | 11.x           |  5.x |

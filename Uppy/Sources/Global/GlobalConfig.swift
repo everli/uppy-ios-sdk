@@ -16,10 +16,10 @@ class GlobalConfig {
 
   static let ErrorKey = "UppyErrorMessage"
   static let ErrorDomain = "com.uppy.network"
-  static let baseUrl = Environment.current.baseUrl
 
   // MARK: - Instance properties
 
+  var baseUrl = ""
   var app: AppProtocol = App()
   var device: DeviceProtocol = Device()
   var logLevel: LogLevel = .info
