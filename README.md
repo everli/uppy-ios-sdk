@@ -66,7 +66,9 @@ target '<Your Target Name>' do
 end
 ```
 
-and then run `pod install`. More info about CocoaPods [here](https://cocoapods.org)
+and then run `pod install`. 
+
+More info about CocoaPods [here](https://cocoapods.org)
 
 ### Manual installation
 
@@ -88,9 +90,10 @@ import Uppy
 and then initialize the sdk:
 
 ``` swift
-Uppy.shared.initialize(with mode:)(
+Uppy.shared.initialize(with baseUrl: and mode:)
 ```
-* **mode**: It is an enum of type `SDKMode`, which is used during initialization for controlling the views for OTA & Forced update. There are two types of modes: 
+* **baseUrl**: It is a string which provides the url path for the Uppy server.
+  **mode**: It is an enum of type `SDKMode`, which is used during initialization for controlling the views for OTA & Forced update. There are two types of modes: 
   * native: This mode is used to show native view elements of Uppy ios sdk.
   * custom: This mode is used to present custom views for OTA alert & Forced update screen.
 
