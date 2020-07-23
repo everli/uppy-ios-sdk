@@ -235,7 +235,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Uppy * _Nonn
 
 
 @interface Uppy (SWIFT_EXTENSION(Uppy))
-- (void)initializeWith:(enum SDKMode)mode;
+- (void)initializeWith:(NSString * _Nonnull)baseUrl and:(enum SDKMode)mode;
 - (void)getUpdateWith:(void (^ _Nullable)(NSString * _Nonnull, BOOL))completionHandler;
 @end
 
@@ -482,7 +482,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Uppy * _Nonn
 
 
 @interface Uppy (SWIFT_EXTENSION(Uppy))
-- (void)initializeWith:(enum SDKMode)mode;
+- (void)initializeWith:(NSString * _Nonnull)baseUrl and:(enum SDKMode)mode;
 - (void)getUpdateWith:(void (^ _Nullable)(NSString * _Nonnull, BOOL))completionHandler;
 @end
 
