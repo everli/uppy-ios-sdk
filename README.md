@@ -26,13 +26,13 @@ Uppy iOS SDK provides api's for controlling manual & forced updates for iOS app.
 ### Features
 
 * **Automatic OTA Updates** when uploading new versions to Uppy.
-* **Force update** if App version is lower than the minimum version configured in Uppy.
+* **Force update** if App version is lower than the minimum supported version configured in Uppy.
 
 ## SDK Installation
 
 ### Using Carthage
 
-Install carthage with using brew
+Install carthage with brew
 
 ```bash
 brew update && brew install carthage
@@ -41,7 +41,7 @@ brew update && brew install carthage
 Add the following line to your's Cartfile
 
 ```bash
-github "Supermercato24/uppy-ios-sdk" ~> 1.0
+github "Everli/uppy-ios-sdk" ~> 1.0
 ```
 
 Run `carthage update` and then drag the built framework into your project. 
