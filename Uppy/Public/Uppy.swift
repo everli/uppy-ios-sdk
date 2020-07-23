@@ -51,9 +51,11 @@ extension Uppy {
   /*
    Initializes sdk with given mode
    - Parameters:
+      - baseUrl: String - Provides url path for Uppy server.
       - mode: SDKMode - Provides native or custom view for updating to latest build.
    */
-  @objc public func initialize(with mode: SDKMode = .native) {
+  @objc public func initialize(with baseUrl: String, and mode: SDKMode = .native) {
+    globalConfig.baseUrl = baseUrl
     updateCoordinator.sdkMode = mode
     updateInteractor.start()
   }
