@@ -70,6 +70,15 @@ extension Uppy {
   @objc public func getUpdate(with completionHandler: ((_ downloadUrl: String, _ isForced: Bool) -> Void)?) {
     updateCompletionHandler = completionHandler
   }
+  
+  /*
+   Sets the log level of sdk for debugging purposes.
+   - Parameters:
+      - logLevel: LogLevel - Sets the types of logs which are displayed for the Uppy iOS sdk.
+   */
+  @objc public func setLogLevel(_ logLevel: LogLevel) {
+    globalConfig.logLevel = logLevel
+  }
 }
 
 // MARK: - Update coordinator output
