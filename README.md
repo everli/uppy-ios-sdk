@@ -124,10 +124,10 @@ func setLogLevel(_ logLevel: LogLevel)
   *  info: Errors and relevant information is shown. This is the default log level too.
   *  debug: Requests and Responses from server are shown along with warnings & erros.
   
-  ## Swift & Xcode version support
+## Swift & Xcode version support
 
-  The compatibility version is as follow:
+The compatibility version is as follow:
 
-  | Uppy Version | Xcode Version  | Swift Version |
-  |-------------------|----------------|---------------|
-  | **v1.0**          | 11.x           |  5.x |
+| Uppy Version | Xcode Version  | Swift Version |
+|-------------------|----------------|---------------|
+| **v1.0**          | 11.x           |  5.x |
