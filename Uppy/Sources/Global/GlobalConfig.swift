@@ -17,6 +17,8 @@ class GlobalConfig {
   static let ErrorKey = "UppyErrorMessage"
   static let ErrorDomain = "com.uppy.network"
 
+  static let applicationSlug = "everli-shopper-app"
+
   // MARK: - Instance properties
 
   var baseUrl = ""

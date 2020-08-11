@@ -12,7 +12,7 @@ class UpdateService {
 
   func checkUpdates(for appVersion: String, with completionHandler: @escaping (ObjectResponse<Update>?, ErrorResponse?) -> Void) {
 
-    Request(endpoint: "/api/v1/updates/iOS/\(appVersion)")
+    Request(endpoint: "/api/v1/applications/\(GlobalConfig.applicationSlug)/updates/iOS/\(appVersion)")
       .sendAsync { response in
 
         guard let data = response.data, response.isSuccess else {
