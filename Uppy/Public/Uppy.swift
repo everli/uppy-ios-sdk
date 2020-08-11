@@ -12,10 +12,6 @@ import Foundation
 
   @objc public static let shared = Uppy()
 
-  // MARK: - Public Properties
-
-  @objc public var logLevel: LogLevel = .info { didSet { globalConfig.logLevel = logLevel } }
-
   // MARK: - Private properties
 
   private let globalConfig: GlobalConfig
@@ -70,7 +66,7 @@ extension Uppy {
   @objc public func getUpdate(with completionHandler: ((_ downloadUrl: String, _ isForced: Bool) -> Void)?) {
     updateCompletionHandler = completionHandler
   }
-  
+
   /*
    Sets the log level of sdk for debugging purposes.
    - Parameters:
