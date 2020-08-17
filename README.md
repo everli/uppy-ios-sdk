@@ -27,6 +27,7 @@ Uppy iOS SDK provides api's for controlling manual & forced updates for iOS app.
 
 * **Automatic OTA Updates** when uploading new versions to Uppy.
 * **Force update** if App version is lower than the minimum supported version configured in Uppy.
+* **Multiple distribution** Support for app distribution through mutiple clusters.
 
 ## SDK Installation
 
@@ -41,7 +42,7 @@ brew update && brew install carthage
 Add the following line to your's Cartfile
 
 ```bash
-github "Everli/uppy-ios-sdk" ~> 1.0
+github "everli/uppy-ios-sdk" ~> 1.0
 ```
 
 Run `carthage update` and then drag the built framework into your project. 
@@ -70,7 +71,7 @@ More info about CocoaPods [here](https://cocoapods.org)
 
 ### Manual installation
 
-1. Download the Uppy.framework [here](https://github.com/Supermercato24/uppy-ios-sdk/tree/master/Uppy.framework)
+1. Download the Uppy.framework [here](https://github.com/everli/uppy-ios-sdk/tree/master/Uppy.framework)
 2. Drag it to your frameworks folder
 3. Add it to "Frameworks, Libraries, and Embedded Content"
 
@@ -88,8 +89,9 @@ import Uppy
 and then initialize the sdk:
 
 ``` swift
-Uppy.shared.initialize(with baseUrl: and mode:)
+Uppy.shared.initialize(applicationID: with baseUrl: and mode:)
 ```
+* **applicationID**: It is a string which provides the slug value of Uppy application on server, which is used to reference the correct url path.
 * **baseUrl**: It is a string which provides the url path for the Uppy server.
 * **mode**: It is an enum of type `SDKMode`, which is used during initialization for controlling the views for OTA & Forced update. There are two types of modes: 
   * native: This mode is used to show native view elements of Uppy ios sdk.
@@ -109,7 +111,7 @@ func getUpdate(with completionHandler: ((_ downloadUrl: String, _ isForced: Bool
   * downloadUrl: String - Contains the download link for the latest build.
   * isForced: Bool - Checks if the latest update is forced.
    
-- NOTE: Be sure to call `initialize(with baseUrl: and mode:)` before calling this method.
+   - NOTE: Be sure to call `initialize(applicationID: with baseUrl: and mode:)` before calling this method.
 
 ### Logs and debugging
 
