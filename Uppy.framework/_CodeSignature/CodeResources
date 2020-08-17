@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Uppy-Swift.h</key>
 		<data>
-		KwWSM00fsM9/qkUiAyILbD6tFfw=
+		gmS40n7P9sf+ovk1mYMNl2pllhg=
 		</data>
 		<key>Headers/Uppy.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Uppy.swiftmodule/arm.swiftmodule</key>
 		<data>
-		ncKFoTV9zbrrhmjCyGWshM6qd00=
+		/UIsRy2PbJ2gVSp7MtXLA7Lo8Ps=
 		</data>
 		<key>Modules/Uppy.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Uppy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		kMBwKh0lLyttWDZA+oheXHny9xc=
+		ptFqxERebUm0pDzs2asbzxiWY6k=
 		</data>
 		<key>Modules/Uppy.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/Uppy.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		kMBwKh0lLyttWDZA+oheXHny9xc=
+		ptFqxERebUm0pDzs2asbzxiWY6k=
 		</data>
 		<key>Modules/Uppy.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/Uppy.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		ncKFoTV9zbrrhmjCyGWshM6qd00=
+		/UIsRy2PbJ2gVSp7MtXLA7Lo8Ps=
 		</data>
 		<key>Modules/Uppy.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/Uppy.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		ncKFoTV9zbrrhmjCyGWshM6qd00=
+		/UIsRy2PbJ2gVSp7MtXLA7Lo8Ps=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,27 +70,27 @@
 		</data>
 		<key>Update.storyboardc/QiW-rN-Tnd-view-hNg-uu-f8l.nib/objects-11.0+.nib</key>
 		<data>
-		w+Kjs/hlsXmMDclr0RkTTeJYpAQ=
+		O/Z3vdXfacoPNxyk0OGc5kuCx4Y=
 		</data>
 		<key>Update.storyboardc/QiW-rN-Tnd-view-hNg-uu-f8l.nib/objects-13.0+.nib</key>
 		<data>
-		QQggWHXrXioRFNcAKr4JDOYUt1Q=
+		yrNJwSO60fAkgfUhSZCwCActJ7Q=
 		</data>
 		<key>Update.storyboardc/QiW-rN-Tnd-view-hNg-uu-f8l.nib/runtime.nib</key>
 		<data>
-		43dG1L5pfiAD8rYlGvotrK137Bg=
+		7qC6oHXsApGDkhOLEM3tyxLgx+Q=
 		</data>
 		<key>Update.storyboardc/UpdateViewController.nib/objects-11.0+.nib</key>
 		<data>
-		2AkveuGI0X9NPV7BJ3FruC5oSx4=
+		/wFzimiCcD2lDKzzXsWUQxfM5aw=
 		</data>
 		<key>Update.storyboardc/UpdateViewController.nib/objects-13.0+.nib</key>
 		<data>
-		IfcFwfBrRBurcIWyTzPgoZu67go=
+		a5sHzuVm44JRlmr9veAUPz78DcQ=
 		</data>
 		<key>Update.storyboardc/UpdateViewController.nib/runtime.nib</key>
 		<data>
-		DNXbF9IytVSGZA1FPOXdCO535F8=
+		y0nFPEhYM/k9pW2Jfv0gBHApEJQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -99,11 +99,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KwWSM00fsM9/qkUiAyILbD6tFfw=
+			gmS40n7P9sf+ovk1mYMNl2pllhg=
 			</data>
 			<key>hash2</key>
 			<data>
-			4pHXHEds5afAq5lKaAyTZFQkm55Uq/gHXJUTt4nRJlk=
+			dl1xq9JqbiSbb1tkAAog2RR5X/8r+qAJBS79zqujUrM=
 			</data>
 		</dict>
 		<key>Headers/Uppy.h</key>
@@ -143,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ncKFoTV9zbrrhmjCyGWshM6qd00=
+			/UIsRy2PbJ2gVSp7MtXLA7Lo8Ps=
 			</data>
 			<key>hash2</key>
 			<data>
-			ysCCDso6KZ81+l4PXFPcVTGRvXtJylyBAOVmEYWNBR0=
+			g+pY2JxgK/DIPyYhxx0bO8TqOB8YoweGMDXIAAC7mVM=
 			</data>
 		</dict>
 		<key>Modules/Uppy.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -165,11 +165,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kMBwKh0lLyttWDZA+oheXHny9xc=
+			ptFqxERebUm0pDzs2asbzxiWY6k=
 			</data>
 			<key>hash2</key>
 			<data>
-			TTOYCiMlIHKye5SndHpF+BmoeLjklaGEEZfyFXc++lU=
+			49WgwRu7QWeV/GiXXciXw0heVmzEgqR0Lp72RgHlISo=
 			</data>
 		</dict>
 		<key>Modules/Uppy.swiftmodule/arm64.swiftdoc</key>
@@ -187,11 +187,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kMBwKh0lLyttWDZA+oheXHny9xc=
+			ptFqxERebUm0pDzs2asbzxiWY6k=
 			</data>
 			<key>hash2</key>
 			<data>
-			TTOYCiMlIHKye5SndHpF+BmoeLjklaGEEZfyFXc++lU=
+			49WgwRu7QWeV/GiXXciXw0heVmzEgqR0Lp72RgHlISo=
 			</data>
 		</dict>
 		<key>Modules/Uppy.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -209,11 +209,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ncKFoTV9zbrrhmjCyGWshM6qd00=
+			/UIsRy2PbJ2gVSp7MtXLA7Lo8Ps=
 			</data>
 			<key>hash2</key>
 			<data>
-			ysCCDso6KZ81+l4PXFPcVTGRvXtJylyBAOVmEYWNBR0=
+			g+pY2JxgK/DIPyYhxx0bO8TqOB8YoweGMDXIAAC7mVM=
 			</data>
 		</dict>
 		<key>Modules/Uppy.swiftmodule/armv7.swiftdoc</key>
@@ -231,11 +231,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ncKFoTV9zbrrhmjCyGWshM6qd00=
+			/UIsRy2PbJ2gVSp7MtXLA7Lo8Ps=
 			</data>
 			<key>hash2</key>
 			<data>
-			ysCCDso6KZ81+l4PXFPcVTGRvXtJylyBAOVmEYWNBR0=
+			g+pY2JxgK/DIPyYhxx0bO8TqOB8YoweGMDXIAAC7mVM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -264,66 +264,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w+Kjs/hlsXmMDclr0RkTTeJYpAQ=
+			O/Z3vdXfacoPNxyk0OGc5kuCx4Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			WRbbXBO7B5Atq0+X/dzEwFREzqVhLgr2kzwPSFnaERw=
+			tlxevu/kY0th4kgh4yzKH0T4jou7pT+7rdrRyJwI2HU=
 			</data>
 		</dict>
 		<key>Update.storyboardc/QiW-rN-Tnd-view-hNg-uu-f8l.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QQggWHXrXioRFNcAKr4JDOYUt1Q=
+			yrNJwSO60fAkgfUhSZCwCActJ7Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			68SbYoSG+OZPtBjHsJJQb+TdttOYMt4I0AaDKtLhEXY=
+			ErrTUeop9f/7FEn5GR5JovaLaEm2lhJqR9dD9IOvihA=
 			</data>
 		</dict>
 		<key>Update.storyboardc/QiW-rN-Tnd-view-hNg-uu-f8l.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			43dG1L5pfiAD8rYlGvotrK137Bg=
+			7qC6oHXsApGDkhOLEM3tyxLgx+Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			IxwSGm7ziWlHobmjHjEd/d1Z/np2nIQQjBV6C4Ctjn4=
+			t5tYuHtZXFKzVsIIc/L8C0XuvbhFJkK4/3nEBwM4Oh0=
 			</data>
 		</dict>
 		<key>Update.storyboardc/UpdateViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2AkveuGI0X9NPV7BJ3FruC5oSx4=
+			/wFzimiCcD2lDKzzXsWUQxfM5aw=
 			</data>
 			<key>hash2</key>
 			<data>
-			qU48N7fhczOdKC7IK25Xhv/NtyK1btM+3q/SFzzcqCQ=
+			eEAdf1yGYBgmT96xx9gD0jZ8oNCYa4wI+8FaenMxLy0=
 			</data>
 		</dict>
 		<key>Update.storyboardc/UpdateViewController.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IfcFwfBrRBurcIWyTzPgoZu67go=
+			a5sHzuVm44JRlmr9veAUPz78DcQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			iYy42ePx5v7hFlPLcua/Yey8smnFZSlOZgFz0Q47jsM=
+			+TeVvog0bYZH/L0LfOUmk1Z0hFLxCV778kPM77HX12s=
 			</data>
 		</dict>
 		<key>Update.storyboardc/UpdateViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DNXbF9IytVSGZA1FPOXdCO535F8=
+			y0nFPEhYM/k9pW2Jfv0gBHApEJQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			8dsJBvxXkED9QB6BgpAC35qdR/DnSyRRULSDJ2fWSSY=
+			uz56dv3U0cC5yQJy38KdL1EoB3mw5XP/uhjJcWNxfug=
 			</data>
 		</dict>
 	</dict>
