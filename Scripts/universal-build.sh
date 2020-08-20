@@ -11,7 +11,7 @@ rm -rf ${FRAMEWORK_NAME}
 mkdir build
 
 # build framework for iPhoneSimulator
-xcodebuild clean build \
+xcodebuild BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS="-fembed-bitcode" clean build \
   -project ${PROJECT_NAME} \
   -scheme ${TARGET_NAME} \
   -configuration Release \
@@ -25,7 +25,7 @@ mkdir build/simulator
 cp -r derived_data/Build/Products/Release-iphonesimulator/${FRAMEWORK_NAME} build/simulator
 
 # build framework for iPhoneOS
-xcodebuild clean build \
+xcodebuild BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS="-fembed-bitcode" clean build \
   -project ${PROJECT_NAME} \
   -scheme ${TARGET_NAME} \
   -configuration Release \

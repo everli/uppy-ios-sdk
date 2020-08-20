@@ -33,12 +33,12 @@ class AppMock: AppProtocol {
     return mockVersion
   }
   
-  func getVersionName() -> String {
-    return mockName
-  }
-  
   func getSDKVersion() -> String {
     return mockVersion
+  }
+  
+  func getBuildNumber() -> String {
+    return mockName
   }
   
   func openUrl(_ url: String) {

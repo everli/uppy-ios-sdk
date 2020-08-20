@@ -20,6 +20,7 @@ class GlobalConfig {
   // MARK: - Instance properties
 
   var baseUrl = ""
+  var applicationID = ""
   var app: AppProtocol = App()
   var device: DeviceProtocol = Device()
   var logLevel: LogLevel = .info

@@ -12,10 +12,6 @@ import Foundation
 
   @objc public static let shared = Uppy()
 
-  // MARK: - Public Properties
-
-  @objc public var logLevel: LogLevel = .info { didSet { globalConfig.logLevel = logLevel } }
-
   // MARK: - Private properties
 
   private let globalConfig: GlobalConfig
@@ -51,10 +47,12 @@ extension Uppy {
   /*
    Initializes sdk with given mode
    - Parameters:
+      - applicationID: String - Provides the slug value of Uppy application on server, which is used to reference the correct url path.
       - baseUrl: String - Provides url path for Uppy server.
       - mode: SDKMode - Provides native or custom view for updating to latest build.
    */
-  @objc public func initialize(with baseUrl: String, and mode: SDKMode = .native) {
+  @objc public func initialize(applicationID: String, with baseUrl: String, and mode: SDKMode = .native) {
+    globalConfig.applicationID = applicationID
     globalConfig.baseUrl = baseUrl
     updateCoordinator.sdkMode = mode
     updateInteractor.start()
@@ -70,7 +68,7 @@ extension Uppy {
   @objc public func getUpdate(with completionHandler: ((_ downloadUrl: String, _ isForced: Bool) -> Void)?) {
     updateCompletionHandler = completionHandler
   }
-  
+
   /*
    Sets the log level of sdk for debugging purposes.
    - Parameters:

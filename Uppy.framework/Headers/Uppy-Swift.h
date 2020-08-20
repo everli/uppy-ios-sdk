@@ -228,18 +228,18 @@ SWIFT_CLASS("_TtC4Uppy4Uppy")
 @interface Uppy : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Uppy * _Nonnull shared;)
 + (Uppy * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic) enum LogLevel logLevel;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
+
+
 @interface Uppy (SWIFT_EXTENSION(Uppy))
-- (void)initializeWith:(NSString * _Nonnull)baseUrl and:(enum SDKMode)mode;
+- (void)initializeWithApplicationID:(NSString * _Nonnull)applicationID with:(NSString * _Nonnull)baseUrl and:(enum SDKMode)mode;
 - (void)getUpdateWith:(void (^ _Nullable)(NSString * _Nonnull, BOOL))completionHandler;
+- (void)setLogLevel:(enum LogLevel)logLevel;
 @end
-
-
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -475,18 +475,18 @@ SWIFT_CLASS("_TtC4Uppy4Uppy")
 @interface Uppy : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Uppy * _Nonnull shared;)
 + (Uppy * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic) enum LogLevel logLevel;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
+
+
 @interface Uppy (SWIFT_EXTENSION(Uppy))
-- (void)initializeWith:(NSString * _Nonnull)baseUrl and:(enum SDKMode)mode;
+- (void)initializeWithApplicationID:(NSString * _Nonnull)applicationID with:(NSString * _Nonnull)baseUrl and:(enum SDKMode)mode;
 - (void)getUpdateWith:(void (^ _Nullable)(NSString * _Nonnull, BOOL))completionHandler;
+- (void)setLogLevel:(enum LogLevel)logLevel;
 @end
-
-
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

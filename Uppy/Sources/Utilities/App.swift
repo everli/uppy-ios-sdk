@@ -14,7 +14,7 @@ protocol AppProtocol {
   func bundleId() -> String
   func getVersion() -> String
   func getSDKVersion() -> String
-  func getVersionName() -> String
+  func getBuildNumber() -> String
   func openUrl(_ url: String)
   func waitForReadyThen(_ onReady: @escaping () -> Void)
   func showOtaAlert(_ message: String, updateHandler: @escaping () -> Void)
@@ -38,13 +38,6 @@ class App: AppProtocol {
   }
 
   func getVersion() -> String {
-    guard let version = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
-      return "NO_VERSION_FOUND"
-    }
-    return version
-  }
-
-  func getVersionName() -> String {
     guard let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else {
       return "NO_VERSION_FOUND"
     }
@@ -53,6 +46,13 @@ class App: AppProtocol {
 
   func getSDKVersion() -> String {
     guard let version = Bundle.uppy().infoDictionary?["CFBundleShortVersionString"] as? String else {
+      return "NO_VERSION_FOUND"
+    }
+    return version
+  }
+
+  func getBuildNumber() -> String {
+    guard let version = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
       return "NO_VERSION_FOUND"
     }
     return version
