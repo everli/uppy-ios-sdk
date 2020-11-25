@@ -11,7 +11,7 @@ rm -rf ${FRAMEWORK_NAME}
 mkdir build
 
 # build framework for iPhoneSimulator
-xcodebuild BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS="-fembed-bitcode" clean build \
+xcodebuild BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS="-fembed-bitcode" EXCLUDED_ARCHS="arm64" clean build \
   -project ${PROJECT_NAME} \
   -scheme ${TARGET_NAME} \
   -configuration Release \
@@ -50,7 +50,7 @@ lipo -create \
   -output ${FRAMEWORK_NAME}/${TARGET_NAME}
 
 # copy simulator Swift public interface to universal framework
-cp build/simulator/${FRAMEWORK_NAME}/Modules/${MODULE_NAME}/* ${FRAMEWORK_NAME}/Modules/${MODULE_NAME}
+cp -R build/simulator/${FRAMEWORK_NAME}/Modules/${MODULE_NAME}/* ${FRAMEWORK_NAME}/Modules/${MODULE_NAME}
 
 # remove foldera
 rm -rf build/
