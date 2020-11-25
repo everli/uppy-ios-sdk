@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Uppy-Swift.h</key>
 		<data>
-		gmS40n7P9sf+ovk1mYMNl2pllhg=
+		bdqlcVJ/s4ndcIAHRwJSCAvQylk=
 		</data>
 		<key>Headers/Uppy.h</key>
 		<data>
@@ -14,51 +14,91 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yItHBTNumT9G5nd66B9rZFBzUeY=
+		/wZ05PpMAAIsrcztv1TTtgscCLc=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
 		pNO0/pjZ3OL4cSMYAV9nEKWvH44=
 		</data>
+		<key>Modules/Uppy.swiftmodule/Project/arm.swiftsourceinfo</key>
+		<data>
+		0gluZUntBsrcK7uxQKDUxBaxnFA=
+		</data>
+		<key>Modules/Uppy.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<data>
+		ErMhFIyIOPTPd5p/oNyqRRQml90=
+		</data>
+		<key>Modules/Uppy.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<data>
+		ErMhFIyIOPTPd5p/oNyqRRQml90=
+		</data>
+		<key>Modules/Uppy.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
+		<data>
+		0gluZUntBsrcK7uxQKDUxBaxnFA=
+		</data>
+		<key>Modules/Uppy.swiftmodule/Project/armv7.swiftsourceinfo</key>
+		<data>
+		0gluZUntBsrcK7uxQKDUxBaxnFA=
+		</data>
 		<key>Modules/Uppy.swiftmodule/arm.swiftdoc</key>
 		<data>
-		dd6gQx0JS/SdnxiKQSL2oPfNS04=
+		EQdxArs0nDc8Emx1sMtaSs/7E+g=
+		</data>
+		<key>Modules/Uppy.swiftmodule/arm.swiftinterface</key>
+		<data>
+		yjNhXaDOVVnv5Yg6O2UYeICvxKY=
 		</data>
 		<key>Modules/Uppy.swiftmodule/arm.swiftmodule</key>
 		<data>
-		/UIsRy2PbJ2gVSp7MtXLA7Lo8Ps=
+		tWOsxB9IJ8Vk3gw0WIrKGe+aiEI=
 		</data>
 		<key>Modules/Uppy.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		yQoyRp5HCU4+9/tjbS9PIxPOnPU=
+		pxD1h/rxXOtddYDrfz61lAS1syg=
+		</data>
+		<key>Modules/Uppy.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		+u2z3+B1OWbCYySU1qoz0RgHQzs=
 		</data>
 		<key>Modules/Uppy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ptFqxERebUm0pDzs2asbzxiWY6k=
+		DHJR9HqkoBbFknyINXSMcr+lWmg=
 		</data>
 		<key>Modules/Uppy.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		yQoyRp5HCU4+9/tjbS9PIxPOnPU=
+		pxD1h/rxXOtddYDrfz61lAS1syg=
+		</data>
+		<key>Modules/Uppy.swiftmodule/arm64.swiftinterface</key>
+		<data>
+		+u2z3+B1OWbCYySU1qoz0RgHQzs=
 		</data>
 		<key>Modules/Uppy.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ptFqxERebUm0pDzs2asbzxiWY6k=
+		DHJR9HqkoBbFknyINXSMcr+lWmg=
 		</data>
 		<key>Modules/Uppy.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		dd6gQx0JS/SdnxiKQSL2oPfNS04=
+		EQdxArs0nDc8Emx1sMtaSs/7E+g=
+		</data>
+		<key>Modules/Uppy.swiftmodule/armv7-apple-ios.swiftinterface</key>
+		<data>
+		yjNhXaDOVVnv5Yg6O2UYeICvxKY=
 		</data>
 		<key>Modules/Uppy.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		/UIsRy2PbJ2gVSp7MtXLA7Lo8Ps=
+		tWOsxB9IJ8Vk3gw0WIrKGe+aiEI=
 		</data>
 		<key>Modules/Uppy.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		dd6gQx0JS/SdnxiKQSL2oPfNS04=
+		EQdxArs0nDc8Emx1sMtaSs/7E+g=
+		</data>
+		<key>Modules/Uppy.swiftmodule/armv7.swiftinterface</key>
+		<data>
+		yjNhXaDOVVnv5Yg6O2UYeICvxKY=
 		</data>
 		<key>Modules/Uppy.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		/UIsRy2PbJ2gVSp7MtXLA7Lo8Ps=
+		tWOsxB9IJ8Vk3gw0WIrKGe+aiEI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,27 +110,19 @@
 		</data>
 		<key>Update.storyboardc/QiW-rN-Tnd-view-hNg-uu-f8l.nib/objects-11.0+.nib</key>
 		<data>
-		O/Z3vdXfacoPNxyk0OGc5kuCx4Y=
-		</data>
-		<key>Update.storyboardc/QiW-rN-Tnd-view-hNg-uu-f8l.nib/objects-13.0+.nib</key>
-		<data>
-		yrNJwSO60fAkgfUhSZCwCActJ7Q=
+		hth9wR/VXY1OCSkZlrdtpPCVwCs=
 		</data>
 		<key>Update.storyboardc/QiW-rN-Tnd-view-hNg-uu-f8l.nib/runtime.nib</key>
 		<data>
-		7qC6oHXsApGDkhOLEM3tyxLgx+Q=
+		ZzfOYsH0cdGc6yoXyT8oTbhMekw=
 		</data>
 		<key>Update.storyboardc/UpdateViewController.nib/objects-11.0+.nib</key>
 		<data>
-		/wFzimiCcD2lDKzzXsWUQxfM5aw=
-		</data>
-		<key>Update.storyboardc/UpdateViewController.nib/objects-13.0+.nib</key>
-		<data>
-		a5sHzuVm44JRlmr9veAUPz78DcQ=
+		2A9aEhBCRZ5x70bSTHrL4ZRUiJ4=
 		</data>
 		<key>Update.storyboardc/UpdateViewController.nib/runtime.nib</key>
 		<data>
-		y0nFPEhYM/k9pW2Jfv0gBHApEJQ=
+		s7eVsV1RY1oBxwP0SH1QXvZLlHQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -99,11 +131,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gmS40n7P9sf+ovk1mYMNl2pllhg=
+			bdqlcVJ/s4ndcIAHRwJSCAvQylk=
 			</data>
 			<key>hash2</key>
 			<data>
-			dl1xq9JqbiSbb1tkAAog2RR5X/8r+qAJBS79zqujUrM=
+			JMvHGZclosEpH2R/LubQRt5McD02SrnNmnRj8s4XkFs=
 			</data>
 		</dict>
 		<key>Headers/Uppy.h</key>
@@ -128,114 +160,224 @@
 			5GUm/Jv6n5RCbtJqI8DIVL3s+MQ3fI1oyPrBAdRYzKQ=
 			</data>
 		</dict>
+		<key>Modules/Uppy.swiftmodule/Project/arm.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0gluZUntBsrcK7uxQKDUxBaxnFA=
+			</data>
+			<key>hash2</key>
+			<data>
+			WQUsE+RcZOKJilv8RTj7yWdanz8hg6++NJaCuKt2Krs=
+			</data>
+		</dict>
+		<key>Modules/Uppy.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ErMhFIyIOPTPd5p/oNyqRRQml90=
+			</data>
+			<key>hash2</key>
+			<data>
+			92VF5di99jI1hwXtWzKFcmYNHA7IsO+8rGG/XwQ5YIQ=
+			</data>
+		</dict>
+		<key>Modules/Uppy.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ErMhFIyIOPTPd5p/oNyqRRQml90=
+			</data>
+			<key>hash2</key>
+			<data>
+			92VF5di99jI1hwXtWzKFcmYNHA7IsO+8rGG/XwQ5YIQ=
+			</data>
+		</dict>
+		<key>Modules/Uppy.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0gluZUntBsrcK7uxQKDUxBaxnFA=
+			</data>
+			<key>hash2</key>
+			<data>
+			WQUsE+RcZOKJilv8RTj7yWdanz8hg6++NJaCuKt2Krs=
+			</data>
+		</dict>
+		<key>Modules/Uppy.swiftmodule/Project/armv7.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0gluZUntBsrcK7uxQKDUxBaxnFA=
+			</data>
+			<key>hash2</key>
+			<data>
+			WQUsE+RcZOKJilv8RTj7yWdanz8hg6++NJaCuKt2Krs=
+			</data>
+		</dict>
 		<key>Modules/Uppy.swiftmodule/arm.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dd6gQx0JS/SdnxiKQSL2oPfNS04=
+			EQdxArs0nDc8Emx1sMtaSs/7E+g=
 			</data>
 			<key>hash2</key>
 			<data>
-			0p+IE0ahZT6eznJlCZSQE+qfCyf8SVH+6OKwDzoCrok=
+			F1u3wSkCOi/XMqPHfWfQf/s8syLdd6cFxY72Yc4yzhQ=
+			</data>
+		</dict>
+		<key>Modules/Uppy.swiftmodule/arm.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yjNhXaDOVVnv5Yg6O2UYeICvxKY=
+			</data>
+			<key>hash2</key>
+			<data>
+			QrjQ8txdJ+4GW/15Nhy0ZCbWKG43Q91wy5uzTlX5uHY=
 			</data>
 		</dict>
 		<key>Modules/Uppy.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/UIsRy2PbJ2gVSp7MtXLA7Lo8Ps=
+			tWOsxB9IJ8Vk3gw0WIrKGe+aiEI=
 			</data>
 			<key>hash2</key>
 			<data>
-			g+pY2JxgK/DIPyYhxx0bO8TqOB8YoweGMDXIAAC7mVM=
+			Z0Zk1BETyZuDJvSLuJtfgzFp3fFupRR1PnDlOvK9UUM=
 			</data>
 		</dict>
 		<key>Modules/Uppy.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yQoyRp5HCU4+9/tjbS9PIxPOnPU=
+			pxD1h/rxXOtddYDrfz61lAS1syg=
 			</data>
 			<key>hash2</key>
 			<data>
-			zSPvFvJ8wLqiPftH3Ub4MP85Dgo6wx5+ZZ40EK8ANNw=
+			Uq/NwEO9AzCcsyU/M3BfZMWG/v4Lxlk44uNfqTc8qeA=
+			</data>
+		</dict>
+		<key>Modules/Uppy.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+u2z3+B1OWbCYySU1qoz0RgHQzs=
+			</data>
+			<key>hash2</key>
+			<data>
+			ajoXiShBf0JqfL5PioggaTunqLHJ/frSGKWt/shTvsk=
 			</data>
 		</dict>
 		<key>Modules/Uppy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ptFqxERebUm0pDzs2asbzxiWY6k=
+			DHJR9HqkoBbFknyINXSMcr+lWmg=
 			</data>
 			<key>hash2</key>
 			<data>
-			49WgwRu7QWeV/GiXXciXw0heVmzEgqR0Lp72RgHlISo=
+			AI1peGeOt8QAGR42MmgjwPt+dKGY01WLs1V0yJ9/k6Q=
 			</data>
 		</dict>
 		<key>Modules/Uppy.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yQoyRp5HCU4+9/tjbS9PIxPOnPU=
+			pxD1h/rxXOtddYDrfz61lAS1syg=
 			</data>
 			<key>hash2</key>
 			<data>
-			zSPvFvJ8wLqiPftH3Ub4MP85Dgo6wx5+ZZ40EK8ANNw=
+			Uq/NwEO9AzCcsyU/M3BfZMWG/v4Lxlk44uNfqTc8qeA=
+			</data>
+		</dict>
+		<key>Modules/Uppy.swiftmodule/arm64.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+u2z3+B1OWbCYySU1qoz0RgHQzs=
+			</data>
+			<key>hash2</key>
+			<data>
+			ajoXiShBf0JqfL5PioggaTunqLHJ/frSGKWt/shTvsk=
 			</data>
 		</dict>
 		<key>Modules/Uppy.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ptFqxERebUm0pDzs2asbzxiWY6k=
+			DHJR9HqkoBbFknyINXSMcr+lWmg=
 			</data>
 			<key>hash2</key>
 			<data>
-			49WgwRu7QWeV/GiXXciXw0heVmzEgqR0Lp72RgHlISo=
+			AI1peGeOt8QAGR42MmgjwPt+dKGY01WLs1V0yJ9/k6Q=
 			</data>
 		</dict>
 		<key>Modules/Uppy.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dd6gQx0JS/SdnxiKQSL2oPfNS04=
+			EQdxArs0nDc8Emx1sMtaSs/7E+g=
 			</data>
 			<key>hash2</key>
 			<data>
-			0p+IE0ahZT6eznJlCZSQE+qfCyf8SVH+6OKwDzoCrok=
+			F1u3wSkCOi/XMqPHfWfQf/s8syLdd6cFxY72Yc4yzhQ=
+			</data>
+		</dict>
+		<key>Modules/Uppy.swiftmodule/armv7-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yjNhXaDOVVnv5Yg6O2UYeICvxKY=
+			</data>
+			<key>hash2</key>
+			<data>
+			QrjQ8txdJ+4GW/15Nhy0ZCbWKG43Q91wy5uzTlX5uHY=
 			</data>
 		</dict>
 		<key>Modules/Uppy.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/UIsRy2PbJ2gVSp7MtXLA7Lo8Ps=
+			tWOsxB9IJ8Vk3gw0WIrKGe+aiEI=
 			</data>
 			<key>hash2</key>
 			<data>
-			g+pY2JxgK/DIPyYhxx0bO8TqOB8YoweGMDXIAAC7mVM=
+			Z0Zk1BETyZuDJvSLuJtfgzFp3fFupRR1PnDlOvK9UUM=
 			</data>
 		</dict>
 		<key>Modules/Uppy.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dd6gQx0JS/SdnxiKQSL2oPfNS04=
+			EQdxArs0nDc8Emx1sMtaSs/7E+g=
 			</data>
 			<key>hash2</key>
 			<data>
-			0p+IE0ahZT6eznJlCZSQE+qfCyf8SVH+6OKwDzoCrok=
+			F1u3wSkCOi/XMqPHfWfQf/s8syLdd6cFxY72Yc4yzhQ=
+			</data>
+		</dict>
+		<key>Modules/Uppy.swiftmodule/armv7.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yjNhXaDOVVnv5Yg6O2UYeICvxKY=
+			</data>
+			<key>hash2</key>
+			<data>
+			QrjQ8txdJ+4GW/15Nhy0ZCbWKG43Q91wy5uzTlX5uHY=
 			</data>
 		</dict>
 		<key>Modules/Uppy.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/UIsRy2PbJ2gVSp7MtXLA7Lo8Ps=
+			tWOsxB9IJ8Vk3gw0WIrKGe+aiEI=
 			</data>
 			<key>hash2</key>
 			<data>
-			g+pY2JxgK/DIPyYhxx0bO8TqOB8YoweGMDXIAAC7mVM=
+			Z0Zk1BETyZuDJvSLuJtfgzFp3fFupRR1PnDlOvK9UUM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -264,66 +406,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O/Z3vdXfacoPNxyk0OGc5kuCx4Y=
+			hth9wR/VXY1OCSkZlrdtpPCVwCs=
 			</data>
 			<key>hash2</key>
 			<data>
-			tlxevu/kY0th4kgh4yzKH0T4jou7pT+7rdrRyJwI2HU=
-			</data>
-		</dict>
-		<key>Update.storyboardc/QiW-rN-Tnd-view-hNg-uu-f8l.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yrNJwSO60fAkgfUhSZCwCActJ7Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			ErrTUeop9f/7FEn5GR5JovaLaEm2lhJqR9dD9IOvihA=
+			wtwUKjoQNH29FGiVgrkOLtCzMZawLbgF6CoHvVFxaqI=
 			</data>
 		</dict>
 		<key>Update.storyboardc/QiW-rN-Tnd-view-hNg-uu-f8l.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7qC6oHXsApGDkhOLEM3tyxLgx+Q=
+			ZzfOYsH0cdGc6yoXyT8oTbhMekw=
 			</data>
 			<key>hash2</key>
 			<data>
-			t5tYuHtZXFKzVsIIc/L8C0XuvbhFJkK4/3nEBwM4Oh0=
+			vg9heExr4Nu7ekylvGQeZdHY8o4b1Oln3a8ir+Tlhiw=
 			</data>
 		</dict>
 		<key>Update.storyboardc/UpdateViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/wFzimiCcD2lDKzzXsWUQxfM5aw=
+			2A9aEhBCRZ5x70bSTHrL4ZRUiJ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			eEAdf1yGYBgmT96xx9gD0jZ8oNCYa4wI+8FaenMxLy0=
-			</data>
-		</dict>
-		<key>Update.storyboardc/UpdateViewController.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			a5sHzuVm44JRlmr9veAUPz78DcQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			+TeVvog0bYZH/L0LfOUmk1Z0hFLxCV778kPM77HX12s=
+			erG9ItHYaKIq/PcLaqJZ/Gpbtxo3YJsbnrY9f/ZE28g=
 			</data>
 		</dict>
 		<key>Update.storyboardc/UpdateViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y0nFPEhYM/k9pW2Jfv0gBHApEJQ=
+			s7eVsV1RY1oBxwP0SH1QXvZLlHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			uz56dv3U0cC5yQJy38KdL1EoB3mw5XP/uhjJcWNxfug=
+			uUXiT6pHKhEkYOvwPC1ogcS4ZDt5NME/R82bcXvOmBA=
 			</data>
 		</dict>
 	</dict>
