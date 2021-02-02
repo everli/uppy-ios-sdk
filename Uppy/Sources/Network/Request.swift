@@ -76,13 +76,15 @@ class Request {
       GlobalConfig.shared.app.getSDKVersion() // SDK Version
 
     request?.setValue(userAgent, forHTTPHeaderField: "User-Agent")
+    request?.addValue("application/json", forHTTPHeaderField: "Accept")
+    request?.addValue("application/json", forHTTPHeaderField: "Content-Type")
   }
 
   private func logRequest() {
-    guard GlobalConfig.shared.logLevel != .debug else { return }
+
+    guard GlobalConfig.shared.logLevel == .debug else { return }
 
     let url = request?.url?.absoluteString ?? "INVALID URL"
-
     log("******** REQUEST ********")
     log(" - URL:\t" + url)
     log(" - METHOD:\t" + (request?.httpMethod ?? "INVALID REQUEST"))
