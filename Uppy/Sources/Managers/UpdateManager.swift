@@ -19,6 +19,7 @@ class UpdateManager {
   func checkUpdates(for appVersion: String,
                     and deviceID: String? = nil,
                     with completionHandler: @escaping (Update?, ErrorResponse?) -> Void) {
-    updateService.checkUpdates(for: appVersion, and: deviceID) { completionHandler($0?.data, $1) }
+    let updateRequest = UpdateRequest(deviceID: deviceID, version: appVersion)
+    updateService.checkUpdates(for: updateRequest) { completionHandler($0?.data, $1) }
   }
 }
