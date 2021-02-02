@@ -64,6 +64,9 @@
 		9CFA5C6724AE0E65009F0181 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA5C6624AE0E65009F0181 /* Dispatch.swift */; };
 		9CFA5C6924AE12B9009F0181 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA5C6824AE12B9009F0181 /* Device.swift */; };
 		9CFA5C6B24AE13F8009F0181 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA5C6A24AE13F8009F0181 /* UIDevice+Extension.swift */; };
+		9CFE7ECA25C9288D002320A7 /* UpdateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE7EC925C9288D002320A7 /* UpdateRequest.swift */; };
+		9CFE7ECE25C92C1A002320A7 /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE7ECD25C92C1A002320A7 /* Codable+Extension.swift */; };
+		9CFE7ED325C932EC002320A7 /* UpdateRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE7ED225C932EC002320A7 /* UpdateRequestTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +142,9 @@
 		9CFA5C6624AE0E65009F0181 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		9CFA5C6824AE12B9009F0181 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		9CFA5C6A24AE13F8009F0181 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		9CFE7EC925C9288D002320A7 /* UpdateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRequest.swift; sourceTree = "<group>"; };
+		9CFE7ECD25C92C1A002320A7 /* Codable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
+		9CFE7ED225C932EC002320A7 /* UpdateRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRequestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				9C48790E24AE44ED0075054D /* Update.swift */,
+				9CFE7EC925C9288D002320A7 /* UpdateRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -314,6 +321,7 @@
 				9C8A7C1F24ADD36A003B192E /* Bundle+Extension.swift */,
 				9C4A21D524B1B3D500F83432 /* UIColor+Extension.swift */,
 				9CFA5C6A24AE13F8009F0181 /* UIDevice+Extension.swift */,
+				9CFE7ECD25C92C1A002320A7 /* Codable+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -423,6 +431,7 @@
 				9C6D321A24B5B58900011217 /* Coordinators */,
 				9C6D322024B5EC5300011217 /* Presenters */,
 				9C54C5B124B49193002667D9 /* Managers */,
+				9CFE7ED125C932C6002320A7 /* Models */,
 				9C54C59B24B42CAD002667D9 /* Mocks */,
 				9C54C59824B42C50002667D9 /* Helpers */,
 				9CB0EAE624AB06480004FCEE /* Info.plist */,
@@ -437,6 +446,14 @@
 				9C48790624AE3BBC0075054D /* InteractorFactory.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		9CFE7ED125C932C6002320A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CFE7ED225C932EC002320A7 /* UpdateRequestTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -498,7 +515,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = Everli;
 				TargetAttributes = {
 					9C7F444F24B6FDA500274B45 = {
@@ -597,6 +614,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFE7ECA25C9288D002320A7 /* UpdateRequest.swift in Sources */,
 				9C4A21D224B1AF5300F83432 /* UpdateViewController.swift in Sources */,
 				9C48791924AE59BE0075054D /* UpdateService.swift in Sources */,
 				9C48790F24AE44ED0075054D /* Update.swift in Sources */,
@@ -616,6 +634,7 @@
 				9C8A7C1D24ADD1D8003B192E /* App.swift in Sources */,
 				9C0686C724B1FB5A00B5D928 /* Localize.swift in Sources */,
 				9CB2163F24AF0CB90054FA01 /* ErrorResponse.swift in Sources */,
+				9CFE7ECE25C92C1A002320A7 /* Codable+Extension.swift in Sources */,
 				9CFA5C6924AE12B9009F0181 /* Device.swift in Sources */,
 				9C4A21D424B1AF6000F83432 /* UpdatePresenter.swift in Sources */,
 				9C48790A24AE3E610075054D /* UpdateInteractor.swift in Sources */,
@@ -628,6 +647,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFE7ED325C932EC002320A7 /* UpdateRequestTests.swift in Sources */,
 				9C6D321F24B5DBF600011217 /* UpdateInteractorTests.swift in Sources */,
 				9C54C59D24B42CC3002667D9 /* AppMock.swift in Sources */,
 				9C54C59F24B42F7A002667D9 /* DeviceMock.swift in Sources */,
@@ -702,6 +722,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -766,6 +787,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
