@@ -89,14 +89,14 @@ import Uppy
 and then initialize the sdk:
 
 ``` swift
-Uppy.shared.initialize(applicationID: with baseUrl: and mode:)
+Uppy.shared.initialize(applicationID: with baseUrl: and mode: for deviceID:)
 ```
 * **applicationID**: It is a string which provides the slug value of Uppy application on server, which is used to reference the correct url path.
 * **baseUrl**: It is a string which provides the url path for the Uppy server.
 * **mode**: It is an enum of type `SDKMode`, which is used during initialization for controlling the views for OTA & Forced update. There are two types of modes: 
   * native: This mode is used to show native view elements of Uppy ios sdk.
   * custom: This mode is used to present custom views for OTA alert & Forced update screen.
-
+* **deviceID**: It is a string which provides a unique device identifier for tracking app installations.
 ## Advanced concepts
 
 ### Customise view for manual & force update
