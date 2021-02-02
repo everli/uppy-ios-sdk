@@ -236,7 +236,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Uppy * _Nonn
 
 
 @interface Uppy (SWIFT_EXTENSION(Uppy))
-- (void)initializeWithApplicationID:(NSString * _Nonnull)applicationID with:(NSString * _Nonnull)baseUrl and:(enum SDKMode)mode;
+- (void)initializeWithApplicationID:(NSString * _Nonnull)applicationID with:(NSString * _Nonnull)baseUrl and:(enum SDKMode)mode for:(NSString * _Nullable)deviceID;
 - (void)getUpdateWith:(void (^ _Nullable)(NSString * _Nonnull, BOOL))completionHandler;
 - (void)setLogLevel:(enum LogLevel)logLevel;
 @end
@@ -484,7 +484,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Uppy * _Nonn
 
 
 @interface Uppy (SWIFT_EXTENSION(Uppy))
-- (void)initializeWithApplicationID:(NSString * _Nonnull)applicationID with:(NSString * _Nonnull)baseUrl and:(enum SDKMode)mode;
+- (void)initializeWithApplicationID:(NSString * _Nonnull)applicationID with:(NSString * _Nonnull)baseUrl and:(enum SDKMode)mode for:(NSString * _Nullable)deviceID;
 - (void)getUpdateWith:(void (^ _Nullable)(NSString * _Nonnull, BOOL))completionHandler;
 - (void)setLogLevel:(enum LogLevel)logLevel;
 @end
