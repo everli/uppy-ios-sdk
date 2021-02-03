@@ -24,4 +24,5 @@ class GlobalConfig {
   var app: AppProtocol = App()
   var device: DeviceProtocol = Device()
   var logLevel: LogLevel = .info
+  var deviceID: String?
 }

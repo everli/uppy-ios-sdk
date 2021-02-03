@@ -39,7 +39,7 @@ func logError(_ error: NSError?, filename: NSString = #file, line: Int = #line, 
 func logError(_ error: ErrorResponse?, filename: NSString = #file, line: Int = #line, funcname: String = #function) {
   guard GlobalConfig.shared.logLevel >= .error, let error = error else { return }
   let function = "\(filename.lastPathComponent)(\(line)) \(funcname)"
-  log("🔥🔥🔥 RESPONSE ERROR: " + (error.getMessage ?? "NO RESPONSE ERROR"))
+  log("🔥🔥🔥 RESPONSE ERROR: " + (error.message ?? "NO RESPONSE ERROR"))
   log("🔥🔥🔥 ⤷ FROM FUNCTION: " + function)
   log("🔥🔥🔥 \n")
 }

@@ -28,11 +28,11 @@ class UpdateInteractor {
   func start() {
     logInfo("UPPY INITIALIZED 🕊")
     logInfo("SDK Version: \(globalConfig.app.getSDKVersion())")
-    checkUpdates(for: globalConfig.app.getVersion())
+    checkUpdates(for: globalConfig.app.getVersion(), and: globalConfig.deviceID)
   }
 
-  func checkUpdates(for appVersion: String) {
-    updateManager.checkUpdates(for: appVersion) { [weak self] update, error in
+  func checkUpdates(for appVersion: String, and deviceID: String? = nil) {
+    updateManager.checkUpdates(for: appVersion, and: deviceID) { [weak self] update, error in
       guard let update = update, error == nil else { logError(error); return }
       update.forced ? self?.output?.forceUpdate(update: update) : self?.output?.otaUpdate(update: update)
     }

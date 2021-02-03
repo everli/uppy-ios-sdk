@@ -10,7 +10,7 @@ import UIKit
   @objc deinit
 }
 extension Uppy {
-  @objc dynamic public func initialize(applicationID: Swift.String, with baseUrl: Swift.String, and mode: Uppy.SDKMode = .native)
+  @objc dynamic public func initialize(applicationID: Swift.String, with baseUrl: Swift.String, and mode: Uppy.SDKMode = .native, for deviceID: Swift.String? = nil)
   @objc dynamic public func getUpdate(with completionHandler: ((Swift.String, Swift.Bool) -> Swift.Void)?)
   @objc dynamic public func setLogLevel(_ logLevel: Uppy.LogLevel)
 }

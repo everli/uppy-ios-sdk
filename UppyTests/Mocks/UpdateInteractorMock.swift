@@ -27,7 +27,7 @@ class UpdateInteractorMock: UpdateInteractor {
     checkUpdates(for: GlobalConfigMock().app.getVersion())
   }
 
-  override func checkUpdates(for appVersion: String) {
+  override func checkUpdates(for appVersion: String, and deviceID: String? = nil) {
     checkUpdatesCalled = true
     isForcedMock ? outputMock?.forceUpdateMock() : outputMock?.otaUpdateMock()
   }

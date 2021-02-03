@@ -50,10 +50,12 @@ extension Uppy {
       - applicationID: String - Provides the slug value of Uppy application on server, which is used to reference the correct url path.
       - baseUrl: String - Provides url path for Uppy server.
       - mode: SDKMode - Provides native or custom view for updating to latest build.
+      - deviceID: String - Provides a unique identifier to track installations on device.
    */
-  @objc public func initialize(applicationID: String, with baseUrl: String, and mode: SDKMode = .native) {
+  @objc public func initialize(applicationID: String, with baseUrl: String, and mode: SDKMode = .native, for deviceID: String? = nil) {
     globalConfig.applicationID = applicationID
     globalConfig.baseUrl = baseUrl
+    globalConfig.deviceID = deviceID
     updateCoordinator.sdkMode = mode
     updateInteractor.start()
   }

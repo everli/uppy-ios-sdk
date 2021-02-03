@@ -10,25 +10,26 @@ import Foundation
 
 class UpdateService {
 
-  func checkUpdates(for appVersion: String, with completionHandler: @escaping (ObjectResponse<Update>?, ErrorResponse?) -> Void) {
+  func checkUpdates(for updateRequest: UpdateRequest,
+                    with completionHandler: @escaping (ObjectResponse<Update>?, ErrorResponse?) -> Void) {
 
-    Request(endpoint: "/api/v1/applications/\(GlobalConfig.shared.applicationID)/updates/iOS/\(appVersion)")
-      .sendAsync { response in
+    let updatesApi = "/api/v2/applications/\(GlobalConfig.shared.applicationID)/updates/iOS"
 
-        guard let data = response.data, response.isSuccess else {
-          completionHandler(nil, try? ErrorFactory.decodeError(from: response))
-          logError(response.error)
-          return
-        }
+    Request(endpoint: updatesApi, method: .POST, bodyParams: updateRequest.dictionary).sendAsync { response in
 
-        do {
-          let updateObject = try JSONDecoder().decode(ObjectResponse<Update>.self, from: data)
-          completionHandler(updateObject, nil)
-        }
-        catch let error as NSError {
-          completionHandler(nil, try? ErrorFactory.decodeError(from: response))
-          logError(error)
-        }
+      guard let data = response.data, response.isSuccess else {
+        completionHandler(nil, try? ErrorFactory.decodeError(from: response))
+        logError(response.error)
+        return
       }
+
+      do {
+        let updateObject = try JSONDecoder().decode(ObjectResponse<Update>.self, from: data)
+        completionHandler(updateObject, nil)
+      }
+      catch {
+        completionHandler(nil, try? ErrorFactory.decodeError(from: response))
+      }
+    }
   }
 }

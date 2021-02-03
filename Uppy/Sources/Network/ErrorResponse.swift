@@ -41,13 +41,3 @@ extension ErrorResponse {
     try? errorContainer.encode(message, forKey: .message)
   }
 }
-
-// MARK: - Public Helpers
-
-extension ErrorResponse {
-
-  var getMessage: String? {
-    guard let message = message, message.isEmpty == false else { return nil }
-    return message
-  }
-}
