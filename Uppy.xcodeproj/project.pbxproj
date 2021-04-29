@@ -35,7 +35,6 @@
 		9C4A21D224B1AF5300F83432 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A21D124B1AF5300F83432 /* UpdateViewController.swift */; };
 		9C4A21D424B1AF6000F83432 /* UpdatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A21D324B1AF6000F83432 /* UpdatePresenter.swift */; };
 		9C4A21D624B1B3D500F83432 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A21D524B1B3D500F83432 /* UIColor+Extension.swift */; };
-		9C54C59724B429BA002667D9 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C54C59624B429BA002667D9 /* OHHTTPStubs.framework */; platformFilter = ios; };
 		9C54C59A24B42C68002667D9 /* StubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C59924B42C68002667D9 /* StubResponse.swift */; platformFilter = ios; };
 		9C54C59D24B42CC3002667D9 /* AppMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C59C24B42CC3002667D9 /* AppMock.swift */; platformFilter = ios; };
 		9C54C59F24B42F7A002667D9 /* DeviceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54C59E24B42F7A002667D9 /* DeviceMock.swift */; platformFilter = ios; };
@@ -50,6 +49,7 @@
 		9C6D321C24B5B5AB00011217 /* UpdateCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D321B24B5B5AB00011217 /* UpdateCoordinatorTests.swift */; platformFilter = ios; };
 		9C6D321F24B5DBF600011217 /* UpdateInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D321E24B5DBF600011217 /* UpdateInteractorTests.swift */; platformFilter = ios; };
 		9C6D322224B5EC8C00011217 /* UpdatePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D322124B5EC8C00011217 /* UpdatePresenterTests.swift */; platformFilter = ios; };
+		9C71F05C263A9D2B00E50AA2 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C54C59624B429BA002667D9 /* OHHTTPStubs.framework */; platformFilter = ios; };
 		9C8A7C1D24ADD1D8003B192E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A7C1C24ADD1D8003B192E /* App.swift */; };
 		9C8A7C2024ADD36A003B192E /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A7C1F24ADD36A003B192E /* Bundle+Extension.swift */; };
 		9C8A7C2424ADDC16003B192E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C8A7C2324ADDC16003B192E /* Localizable.strings */; };
@@ -110,7 +110,7 @@
 		9C4A21D124B1AF5300F83432 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 		9C4A21D324B1AF6000F83432 /* UpdatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePresenter.swift; sourceTree = "<group>"; };
 		9C4A21D524B1B3D500F83432 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		9C54C59624B429BA002667D9 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		9C54C59624B429BA002667D9 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = "Carthage/Build/OHHTTPStubs.xcframework/ios-arm64_i386_x86_64-simulator/OHHTTPStubs.framework"; sourceTree = "<group>"; };
 		9C54C59924B42C68002667D9 /* StubResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubResponse.swift; sourceTree = "<group>"; };
 		9C54C59C24B42CC3002667D9 /* AppMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMock.swift; sourceTree = "<group>"; };
 		9C54C59E24B42F7A002667D9 /* DeviceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceMock.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C54C5AE24B46E2C002667D9 /* Uppy.framework in Frameworks */,
-				9C54C59724B429BA002667D9 /* OHHTTPStubs.framework in Frameworks */,
+				9C71F05C263A9D2B00E50AA2 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,11 +881,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S69C38FM2Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/OHHTTPStubs.xcframework/ios-arm64_i386_x86_64-simulator",
 				);
 				INFOPLIST_FILE = UppyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -904,11 +905,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S69C38FM2Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/OHHTTPStubs.xcframework/ios-arm64_i386_x86_64-simulator",
 				);
 				INFOPLIST_FILE = UppyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
