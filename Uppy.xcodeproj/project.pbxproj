@@ -515,7 +515,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = Everli;
 				TargetAttributes = {
 					9C7F444F24B6FDA500274B45 = {
