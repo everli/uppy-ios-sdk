@@ -1,9 +1,9 @@
 # Uppy iOS SDK
 
 
-[![License](https://img.shields.io/cocoapods/l/razorpay-pod.svg?style=flat)](http://cocoapods.org/pods/razorpay-pod)
-[![Platform](https://img.shields.io/cocoapods/p/razorpay-pod.svg?style=flat)](http://cocoapods.org/pods/razorpay-pod)
-![Language](https://img.shields.io/badge/Language-Swift-orange.svg)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Platform](https://img.shields.io/cocoapods/p/razorpay-pod.svg?style=flat)](https://www.apple.com/)
+[![Language](https://img.shields.io/badge/Language-Swift-orange.svg)](https://swift.org/)
 
 
 ### Table of Contents
