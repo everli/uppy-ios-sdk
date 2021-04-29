@@ -172,7 +172,8 @@
 			children = (
 				9C2C13FE24B8D770006F9A54 /* universal-build.sh */,
 			);
-			path = Scripts;
+			name = Scripts;
+			path = ../Scripts;
 			sourceTree = "<group>";
 		};
 		9C48790824AE3E310075054D /* Interactors */ = {
