@@ -8,9 +8,9 @@
 
 import Foundation
 
-@objc public class Uppy: NSObject {
+public class Uppy: NSObject {
 
-  @objc public static let shared = Uppy()
+  public static let shared = Uppy()
 
   // MARK: - Private properties
 
@@ -52,7 +52,7 @@ extension Uppy {
       - mode: SDKMode - Provides native or custom view for updating to latest build.
       - deviceID: String - Provides a unique identifier to track installations on device.
    */
-  @objc public func initialize(applicationID: String, with baseUrl: String, and mode: SDKMode = .native, for deviceID: String? = nil) {
+  public func initialize(applicationID: String, with baseUrl: String, and mode: SDKMode = .native, for deviceID: String? = nil) {
     globalConfig.applicationID = applicationID
     globalConfig.baseUrl = baseUrl
     globalConfig.deviceID = deviceID
@@ -67,7 +67,7 @@ extension Uppy {
       - isForced: Bool - Checks if the latest update is forced.
    - NOTE: Be sure to call `initiate(with mode:)` before calling this method.
    */
-  @objc public func getUpdate(with completionHandler: ((_ downloadUrl: String, _ isForced: Bool) -> Void)?) {
+  public func getUpdate(with completionHandler: ((_ downloadUrl: String, _ isForced: Bool) -> Void)?) {
     updateCompletionHandler = completionHandler
   }
 
@@ -76,8 +76,17 @@ extension Uppy {
    - Parameters:
       - logLevel: LogLevel - Sets the types of logs which are displayed for the Uppy iOS sdk.
    */
-  @objc public func setLogLevel(_ logLevel: LogLevel) {
+  public func setLogLevel(_ logLevel: LogLevel) {
     globalConfig.logLevel = logLevel
+  }
+
+  /*
+   Sets custom strings from host app. By default english strings are embedded in sdk.
+   - Parameters:
+      - strings: UppyStrings - A public struct type for overriding default string values which are embedded in the sdk.
+   */
+  public func setStrings(_ strings: UppyStrings) {
+    globalConfig.strings = strings
   }
 }
 
@@ -95,7 +104,7 @@ extension Uppy: UpdateCoordinatorOutput {
 }
 
 // Type of logs which needs to be displayed
-@objc public enum LogLevel: Int {
+public enum LogLevel: Int {
 
   // No log will be shown
   case none = 0
@@ -111,7 +120,7 @@ extension Uppy: UpdateCoordinatorOutput {
 }
 
 // Type of SDK Mode mainly for controlling view
-@objc public enum SDKMode: Int {
+public enum SDKMode: Int {
   case native
   case custom
 }
