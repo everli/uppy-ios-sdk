@@ -97,6 +97,7 @@ Uppy.shared.initialize(applicationID: with baseUrl: and mode: for deviceID:)
   * native: This mode is used to show native view elements of Uppy ios sdk.
   * custom: This mode is used to present custom views for OTA alert & Forced update screen.
 * **deviceID**: It is a string which provides a unique device identifier for tracking app installations.
+
 ## Advanced concepts
 
 ### Customise view for manual & force update
@@ -112,6 +113,18 @@ func getUpdate(with completionHandler: ((_ downloadUrl: String, _ isForced: Bool
   * isForced: Bool - Checks if the latest update is forced.
    
    - NOTE: Be sure to call `initialize(applicationID: with baseUrl: and mode:)` before calling this method.
+   
+ ### Customise strings to support multiple languages.
+
+ You can customize & set strings values from the host app inorder to handle localisation of your app.
+ Call the following method if you need to override string values which are embeded in the SDK: 
+
+ ```swift
+ func setStrings(_ strings: UppyStrings)
+```
+ * **UppyStrings**: It is a public struct type which is used to override default string values that are embedded in the sdk.
+   
+   - NOTE: When overriding if no values are passed to the `UppyStrings`type, then default english string values from SDK are used.
 
 ### Logs and debugging
 
