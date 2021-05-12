@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		9C0686C524B1FB4300B5D928 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0686C424B1FB4300B5D928 /* Strings.swift */; };
+		9C0686C524B1FB4300B5D928 /* UppyStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0686C424B1FB4300B5D928 /* UppyStrings.swift */; };
 		9C0686C724B1FB5A00B5D928 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0686C624B1FB5A00B5D928 /* Localize.swift */; };
 		9C48790724AE3BBC0075054D /* InteractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C48790624AE3BBC0075054D /* InteractorFactory.swift */; };
 		9C48790A24AE3E610075054D /* UpdateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C48790924AE3E610075054D /* UpdateInteractor.swift */; };
@@ -94,7 +94,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9C0686C424B1FB4300B5D928 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		9C0686C424B1FB4300B5D928 /* UppyStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UppyStrings.swift; sourceTree = "<group>"; };
 		9C0686C624B1FB5A00B5D928 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		9C2C13FA24B8CF77006F9A54 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		9C2C13FE24B8D770006F9A54 /* universal-build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "universal-build.sh"; path = "Scripts/universal-build.sh"; sourceTree = SOURCE_ROOT; };
@@ -373,7 +373,7 @@
 		9C94ADCD24AD9C4100716091 /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				9C0686C424B1FB4300B5D928 /* Strings.swift */,
+				9C0686C424B1FB4300B5D928 /* UppyStrings.swift */,
 				9C94ADD024ADA70C00716091 /* GlobalConfig.swift */,
 			);
 			path = Global;
@@ -626,7 +626,7 @@
 				9C8A7C2024ADD36A003B192E /* Bundle+Extension.swift in Sources */,
 				9C94ADD124ADA70C00716091 /* GlobalConfig.swift in Sources */,
 				9C4A21D624B1B3D500F83432 /* UIColor+Extension.swift in Sources */,
-				9C0686C524B1FB4300B5D928 /* Strings.swift in Sources */,
+				9C0686C524B1FB4300B5D928 /* UppyStrings.swift in Sources */,
 				9CFA5C6B24AE13F8009F0181 /* UIDevice+Extension.swift in Sources */,
 				9C94ADD924ADBDD800716091 /* Log.swift in Sources */,
 				9CFA5C6724AE0E65009F0181 /* Dispatch.swift in Sources */,
