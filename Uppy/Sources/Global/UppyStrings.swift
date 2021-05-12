@@ -40,3 +40,29 @@ public struct UppyStrings {
     self.forceUpdateMessage = forceUpdateMessage
   }
 }
+
+enum StringLiteral {
+
+  case appName
+  case cancelButton
+  case retryButton
+  case okButton
+  case laterButton
+  case updateButton
+  case otaUpdateMessage
+  case forceUpdateMessage
+
+  var value: String {
+    let strings = GlobalConfig.shared.strings
+    switch self {
+    case .appName: return strings.appName
+    case .cancelButton: return strings.cancelButton
+    case .retryButton: return strings.retryButton
+    case .okButton: return strings.okButton
+    case .laterButton: return strings.laterButton
+    case .updateButton: return strings.updateButton
+    case .otaUpdateMessage: return strings.otaUpdateMessage
+    case .forceUpdateMessage: return strings.forceUpdateMessage
+    }
+  }
+}
