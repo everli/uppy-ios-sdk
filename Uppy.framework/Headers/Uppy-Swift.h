@@ -209,39 +209,17 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-typedef SWIFT_ENUM(NSInteger, LogLevel, open) {
-  LogLevelNone = 0,
-  LogLevelError = 1,
-  LogLevelInfo = 2,
-  LogLevelDebug = 3,
-};
-
-typedef SWIFT_ENUM(NSInteger, SDKMode, open) {
-  SDKModeNative = 0,
-  SDKModeCustom = 1,
-};
-
 
 
 
 
 SWIFT_CLASS("_TtC4Uppy4Uppy")
 @interface Uppy : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Uppy * _Nonnull shared;)
-+ (Uppy * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
-@class NSString;
-@class NSNumber;
-
-@interface Uppy (SWIFT_EXTENSION(Uppy))
-- (void)initializeWithApplicationID:(NSString * _Nonnull)applicationID with:(NSString * _Nonnull)baseUrl and:(enum SDKMode)mode for:(NSString * _Nullable)deviceID;
-- (void)getUpdateWith:(void (^ _Nullable)(NSString * _Nonnull, BOOL))completionHandler;
-- (void)setLogLevel:(enum LogLevel)logLevel;
-@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -459,39 +437,17 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-typedef SWIFT_ENUM(NSInteger, LogLevel, open) {
-  LogLevelNone = 0,
-  LogLevelError = 1,
-  LogLevelInfo = 2,
-  LogLevelDebug = 3,
-};
-
-typedef SWIFT_ENUM(NSInteger, SDKMode, open) {
-  SDKModeNative = 0,
-  SDKModeCustom = 1,
-};
-
 
 
 
 
 SWIFT_CLASS("_TtC4Uppy4Uppy")
 @interface Uppy : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Uppy * _Nonnull shared;)
-+ (Uppy * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
-@class NSString;
-@class NSNumber;
-
-@interface Uppy (SWIFT_EXTENSION(Uppy))
-- (void)initializeWithApplicationID:(NSString * _Nonnull)applicationID with:(NSString * _Nonnull)baseUrl and:(enum SDKMode)mode for:(NSString * _Nullable)deviceID;
-- (void)getUpdateWith:(void (^ _Nullable)(NSString * _Nonnull, BOOL))completionHandler;
-- (void)setLogLevel:(enum LogLevel)logLevel;
-@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
