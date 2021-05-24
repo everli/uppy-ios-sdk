@@ -22,7 +22,7 @@ class UpdatePresenter {
   }
 
   func viewDidLoad() {
-    output?.setForceUpdateMessage(Strings.forceUpdateMessage)
+    output?.setForceUpdateMessage(StringLiteral.forceUpdateMessage.value)
   }
 
   func didTappedUpdateButton() {

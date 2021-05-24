@@ -25,4 +25,5 @@ class GlobalConfig {
   var device: DeviceProtocol = Device()
   var logLevel: LogLevel = .info
   var deviceID: String?
+  var strings = UppyStrings()
 }
