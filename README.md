@@ -10,9 +10,8 @@
 
 * [Overview](#overview)
 * [SDK Installation](#sdk-installation)
+  * [Using SPM](#using-spm)
   * [Using Carthage](#using-carthage)
-  * [Using CocoaPods](#using-cocoapods)
-  * [Manual installation](#manual-installation)
 * [SDK Setup](#sdk-setup)
   * [Swift](#swift)
   * [About params](#about-params)
@@ -31,49 +30,23 @@ Uppy iOS SDK provides api's for controlling manual & forced updates for iOS app.
 
 ## SDK Installation
 
-### Using Carthage
+### Using SPM
 
-Install carthage with brew
-
-```bash
-brew update && brew install carthage
-```
-
-Add the following line to your's Cartfile
+Uppy SDK provides support for Swift Package Manager. 
 
 ```bash
-github "everli/uppy-ios-sdk" ~> 1.0
+https://github.com/everli/uppy-ios-sdk.git
 ```
-
-Run `carthage update` and then drag the built framework into your project. 
-
-More info about Carthage [here](https://github.com/Carthage/Carthage#installing-carthage).
 
 ### Using CocoaPods
 
-Install the ruby gem
-
-```bash
-gem install cocoapods
-```
-
-Add the following line to your's Podfile
+Add the following line to your's Podfile and run `pod install`. 
 
 ```ruby
 target '<Your Target Name>' do
   pod 'Uppy', '~> 1.0'
 end
 ```
-
-and then run `pod install`. 
-
-More info about CocoaPods [here](https://cocoapods.org)
-
-### Manual installation
-
-1. Download the Uppy.framework [here](https://github.com/everli/uppy-ios-sdk/tree/master/Uppy.framework)
-2. Drag it to your frameworks folder
-3. Add it to "Frameworks, Libraries, and Embedded Content"
 
 ## SDK Setup
 
@@ -145,4 +118,4 @@ The compatibility version is as follow:
 
 | Uppy Version | Xcode Version  | Swift Version |
 |-------------------|----------------|---------------|
-| **v1.0**          | 11.x           |  5.x |
+| **v1.0**          | 12.x           |  5.x |
