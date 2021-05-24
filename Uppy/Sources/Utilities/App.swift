@@ -23,7 +23,7 @@ protocol AppProtocol {
 
 class App: AppProtocol {
 
-  // MARK: - Private variables
+  // MARK: - Properties
 
   private lazy var alertOta: UIAlertController = UIAlertController()
 
@@ -71,9 +71,9 @@ class App: AppProtocol {
   }
 
   func showOtaAlert(_ message: String, updateHandler: @escaping () -> Void) {
-    alertOta = UIAlertController(title: Strings.uppy, message: message, preferredStyle: .alert)
-    alertOta.addAction(UIAlertAction(title: Strings.later, style: .cancel, handler: nil))
-    alertOta.addAction(UIAlertAction(title: Strings.update, style: .default) { _ in updateHandler() })
+    alertOta = UIAlertController(title: StringLiteral.appName.value, message: message, preferredStyle: .alert)
+    alertOta.addAction(UIAlertAction(title: StringLiteral.laterButton.value, style: .cancel, handler: nil))
+    alertOta.addAction(UIAlertAction(title: StringLiteral.updateButton.value, style: .default) { _ in updateHandler() })
     topViewController?.present(alertOta, animated: true, completion: nil)
   }
 

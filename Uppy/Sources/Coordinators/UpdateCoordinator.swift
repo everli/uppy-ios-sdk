@@ -53,7 +53,7 @@ extension UpdateCoordinator: UpdateInteractorOutput {
     guard sdkMode == .native else { return }
 
     app.waitForReadyThen { [weak self] in
-      self?.app.showOtaAlert(Strings.otaUpdateMessage, updateHandler: { [weak self] in
+      self?.app.showOtaAlert(StringLiteral.otaUpdateMessage.value, updateHandler: { [weak self] in
         self?.app.openUrl(update.downloadUrl ?? "")
       })
     }

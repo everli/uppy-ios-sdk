@@ -7,13 +7,13 @@
 */
 
 // Generic
-"uppy" = "Uppy";
-"cancel" = "Cancel";
-"retry" = "Retry";
-"ok" = "OK";
-"later" = "Later";
-"update" = "Update";
+"appName" = "Uppy";
+"cancelButton" = "Cancel";
+"retryButton" = "Retry";
+"okButton" = "OK";
+"laterButton" = "Later";
+"updateButton" = "Update";
 
 // Alert Messages
-"ota_update_message" = "There is a new version available for download. Do you want to update to the latest version?";
-"force_update_message" = "Sorry this App is outdated. Please, update the App to continue using it";
+"otaUpdateMessage" = "There is a new version available for download. Do you want to update to the latest version?";
+"forceUpdateMessage" = "Sorry this App is outdated. Please, update the App to continue using it";

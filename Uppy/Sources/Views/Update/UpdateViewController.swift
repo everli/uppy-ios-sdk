@@ -36,7 +36,7 @@ class UpdateViewController: UIViewController {
     forceUpdateButton.layer.cornerRadius = 6
     forceUpdateButton.setTitleColor(.white, for: .normal)
     forceUpdateButton.backgroundColor = UIColor.Violet.Camerlot
-    forceUpdateButton.setTitle(Strings.update.uppercased(), for: .normal)
+    forceUpdateButton.setTitle(StringLiteral.updateButton.value.uppercased(), for: .normal)
     forceUpdateButton.addTarget(self, action: #selector(forcedUpdateButtonTapped), for: .touchUpInside)
   }
 
