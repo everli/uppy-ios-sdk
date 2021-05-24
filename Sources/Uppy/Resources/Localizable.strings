@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Uppy
+
+  Created by Arpit Williams on 02/07/20.
+  Copyright © 2020 Everli. All rights reserved.
+*/
+
+// Generic
+"appName" = "Uppy";
+"cancelButton" = "Cancel";
+"retryButton" = "Retry";
+"okButton" = "OK";
+"laterButton" = "Later";
+"updateButton" = "Update";
+
+// Alert Messages
+"otaUpdateMessage" = "There is a new version available for download. Do you want to update to the latest version?";
+"forceUpdateMessage" = "Sorry this App is outdated. Please, update the App to continue using it";

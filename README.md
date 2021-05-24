@@ -1,18 +1,17 @@
 # Uppy iOS SDK
 
 
-[![License](https://img.shields.io/cocoapods/l/razorpay-pod.svg?style=flat)](http://cocoapods.org/pods/razorpay-pod)
-[![Platform](https://img.shields.io/cocoapods/p/razorpay-pod.svg?style=flat)](http://cocoapods.org/pods/razorpay-pod)
-![Language](https://img.shields.io/badge/Language-Swift-orange.svg)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Platform](https://img.shields.io/cocoapods/p/razorpay-pod.svg?style=flat)](https://www.apple.com/)
+[![Language](https://img.shields.io/badge/Language-Swift-orange.svg)](https://swift.org/)
 
 
 ### Table of Contents
 
 * [Overview](#overview)
 * [SDK Installation](#sdk-installation)
+  * [Using SPM](#using-spm)
   * [Using Carthage](#using-carthage)
-  * [Using CocoaPods](#using-cocoapods)
-  * [Manual installation](#manual-installation)
 * [SDK Setup](#sdk-setup)
   * [Swift](#swift)
   * [About params](#about-params)
@@ -31,49 +30,23 @@ Uppy iOS SDK provides api's for controlling manual & forced updates for iOS app.
 
 ## SDK Installation
 
-### Using Carthage
+### Using SPM
 
-Install carthage with brew
-
-```bash
-brew update && brew install carthage
-```
-
-Add the following line to your's Cartfile
+Uppy SDK provides support for Swift Package Manager. 
 
 ```bash
-github "everli/uppy-ios-sdk" ~> 1.0
+https://github.com/everli/uppy-ios-sdk.git
 ```
-
-Run `carthage update` and then drag the built framework into your project. 
-
-More info about Carthage [here](https://github.com/Carthage/Carthage#installing-carthage).
 
 ### Using CocoaPods
 
-Install the ruby gem
-
-```bash
-gem install cocoapods
-```
-
-Add the following line to your's Podfile
+Add the following line to your's Podfile and run `pod install`. 
 
 ```ruby
 target '<Your Target Name>' do
   pod 'Uppy', '~> 1.0'
 end
 ```
-
-and then run `pod install`. 
-
-More info about CocoaPods [here](https://cocoapods.org)
-
-### Manual installation
-
-1. Download the Uppy.framework [here](https://github.com/everli/uppy-ios-sdk/tree/master/Uppy.framework)
-2. Drag it to your frameworks folder
-3. Add it to "Frameworks, Libraries, and Embedded Content"
 
 ## SDK Setup
 
@@ -89,13 +62,14 @@ import Uppy
 and then initialize the sdk:
 
 ``` swift
-Uppy.shared.initialize(applicationID: with baseUrl: and mode:)
+Uppy.shared.initialize(applicationID: with baseUrl: and mode: for deviceID:)
 ```
 * **applicationID**: It is a string which provides the slug value of Uppy application on server, which is used to reference the correct url path.
 * **baseUrl**: It is a string which provides the url path for the Uppy server.
 * **mode**: It is an enum of type `SDKMode`, which is used during initialization for controlling the views for OTA & Forced update. There are two types of modes: 
   * native: This mode is used to show native view elements of Uppy ios sdk.
   * custom: This mode is used to present custom views for OTA alert & Forced update screen.
+* **deviceID**: It is a string which provides a unique device identifier for tracking app installations.
 
 ## Advanced concepts
 
@@ -112,6 +86,18 @@ func getUpdate(with completionHandler: ((_ downloadUrl: String, _ isForced: Bool
   * isForced: Bool - Checks if the latest update is forced.
    
    - NOTE: Be sure to call `initialize(applicationID: with baseUrl: and mode:)` before calling this method.
+   
+ ### Customise strings to support multiple languages.
+
+ You can customize & set strings values from the host app inorder to handle localisation of your app.
+ Call the following method if you need to override string values which are embeded in the SDK: 
+
+ ```swift
+ func setStrings(_ strings: UppyStrings)
+```
+ * **UppyStrings**: It is a public struct type which is used to override default string values that are embedded in the sdk.
+   
+   - NOTE: When overriding if no values are passed to the `UppyStrings`type, then default english string values from SDK are used.
 
 ### Logs and debugging
 
@@ -132,4 +118,4 @@ The compatibility version is as follow:
 
 | Uppy Version | Xcode Version  | Swift Version |
 |-------------------|----------------|---------------|
-| **v1.0**          | 11.x           |  5.x |
+| **v1.0**          | 12.x           |  5.x |
