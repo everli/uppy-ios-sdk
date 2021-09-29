@@ -17,7 +17,6 @@ let package = Package(
     .target(
       name: "Uppy",
       dependencies: [],
-      exclude: ["Support"],
       resources: [.process("Resources")]),
     .testTarget(
       name: "UppyTests",
@@ -26,7 +25,6 @@ let package = Package(
         .product(name: "OHHTTPStubs", package: "OHHTTPStubs"),
         .product(name: "OHHTTPStubsSwift", package: "OHHTTPStubs")
       ],
-      exclude: ["Support"],
       resources: [.process("Resources")])
   ]
 )
